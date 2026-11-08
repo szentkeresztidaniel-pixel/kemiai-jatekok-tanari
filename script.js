@@ -11958,6 +11958,31 @@ function tanuloJelenletInditasa() {
       return;
     }
 
+    /*
+     * Helyi tanórán a meglévő
+     * jatekos-allapot végpont jelzi
+     * a kapcsolatot játék közben is.
+     */
+    if (helyiJatekUt()) {
+      fetch("/api/tanora/jatekos-allapot", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          jatekosId: munkamenet.jatekosId,
+          jatekosToken: munkamenet.jatekosToken,
+        }),
+        cache: "no-store",
+      }).catch((hiba) => {
+        console.warn(
+          "[TANÓRA] A kapcsolatjelzés nem sikerült:",
+          hiba
+        );
+      });
+      return;
+    }
+
     tanoraNyilvanosApiHivas({
       muvelet: "jelenlet",
       jatekosId: munkamenet.jatekosId,
@@ -12472,6 +12497,8 @@ async function helyiTanoraiJatekInditasa(
         azonnaliInditas: true,
       }
     );
+
+    tanuloJelenletInditasa();
 
     const mentettPont = Number(
       adat.jatekos?.pont

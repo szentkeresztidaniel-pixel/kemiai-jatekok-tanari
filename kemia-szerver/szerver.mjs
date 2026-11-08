@@ -328,6 +328,24 @@ if (
   `);
 }
 
+if (
+  !db.prepare(`
+    SELECT 1 AS ok
+    FROM pragma_table_info('tanora_jatekosok')
+    WHERE name = 'utolso_jelzes'
+  `).get()
+) {
+  db.exec(`
+    ALTER TABLE tanora_jatekosok
+    ADD COLUMN utolso_jelzes INTEGER
+  `);
+  db.exec(`
+    UPDATE tanora_jatekosok
+    SET utolso_jelzes = csatlakozva
+    WHERE utolso_jelzes IS NULL
+  `);
+}
+
 const scryptAszinkron = promisify(scrypt);
 const tokenHash = (token) =>
   createHash("sha256").update(token).digest("hex");
@@ -584,6 +602,7 @@ let aktualisTanoraId = null;
 let tanoraElinditva = null;
 let jatekosDarab = 0;
 let osszesCsalad = [];
+let jatekoslistaFigyelo = null;
 
 const MOLEKULA_CSALAD_CSOPORTOK = [
   { id: "szenhidrogen", cim: "Szénhidrogének" },
@@ -832,13 +851,19 @@ function jatekoslistaMegjelenitese(jatekosok) {
       ? Math.max(0, Math.floor(teljesitett))
       : 0;
 
-    sor.textContent =
+    let szoveg =
       becenev +
       " — " +
       pontSzoveg +
       " pont, " +
       feladatSzoveg +
       " kész feladat";
+
+    if (jatekos?.nincsKapcsolat === true) {
+      szoveg += " — Nincs kapcsolat";
+    }
+
+    sor.textContent = szoveg;
     hely.append(sor);
   }
 
@@ -848,7 +873,34 @@ function jatekoslistaMegjelenitese(jatekosok) {
   inditasGombFrissitese();
 }
 
+function jatekoslistaFigyelesLeallitasa() {
+  if (jatekoslistaFigyelo !== null) {
+    clearInterval(jatekoslistaFigyelo);
+    jatekoslistaFigyelo = null;
+  }
+}
+
+function jatekoslistaFigyelesInditasa() {
+  jatekoslistaFigyelesLeallitasa();
+  const figyeltTanoraId = aktualisTanoraId;
+  if (!figyeltTanoraId) {
+    return;
+  }
+
+  jatekoslistaFigyelo = setInterval(() => {
+    if (aktualisTanoraId !== figyeltTanoraId) {
+      jatekoslistaFigyelesLeallitasa();
+      return;
+    }
+
+    jatekoslistaFrissitese().catch(() => {
+      /* A háttérfrissítés hibáját nem írjuk ki folyamatosan. */
+    });
+  }, 3000);
+}
+
 function jatekoslistaTorlese() {
+  jatekoslistaFigyelesLeallitasa();
   aktualisTanoraId = null;
   tanoraElinditva = null;
   jatekosDarab = 0;
@@ -996,6 +1048,7 @@ elem("tanora-urlap").addEventListener("submit", async (esemeny) => {
     inditasIdoMegjelenitese(null);
     jatekoslistaMegjelenitese([]);
     elem("jatekoslista-uzenet").textContent = "";
+    jatekoslistaFigyelesInditasa();
   } catch (hiba) {
     elem("tanora-eredmeny").textContent = hiba.message;
   } finally {
@@ -1829,7 +1882,11 @@ function httpKezelo(mod, engedelyezettEredetek) {
         const tanoraId = jatekosListaUt;
 
         const tanora = db.prepare(`
-          SELECT id, letrehozo_id
+          SELECT
+            id,
+            letrehozo_id,
+            elinditva,
+            idotartam_masodperc
           FROM tanorak
           WHERE id = ?
         `).get(tanoraId);
@@ -1845,27 +1902,51 @@ function httpKezelo(mod, engedelyezettEredetek) {
           );
         }
 
+        const most = Date.now();
+        let tanoraAktiv = true;
+
+        if (tanora.elinditva != null) {
+          tanoraAktiv =
+            most <
+            tanora.elinditva +
+              tanora.idotartam_masodperc * 1000;
+        }
+
         const jatekosok = db.prepare(`
           SELECT
             id,
             becenev,
             csatlakozva,
             pont,
-            teljesitett_rendelesek
+            teljesitett_rendelesek,
+            utolso_jelzes
           FROM tanora_jatekosok
           WHERE tanora_id = ?
           ORDER BY csatlakozva ASC, id ASC
-        `).all(tanoraId).map((sor) => ({
-          id: sor.id,
-          becenev: sor.becenev,
-          csatlakozva: sor.csatlakozva,
-          pont: sor.pont,
-          teljesitettRendelesek: sor.teljesitett_rendelesek
-        }));
+        `).all(tanoraId).map((sor) => {
+          const utolsoJelzes =
+            typeof sor.utolso_jelzes === "number"
+              ? sor.utolso_jelzes
+              : sor.csatlakozva;
+          const nincsKapcsolat =
+            tanoraAktiv &&
+            most - utolsoJelzes > 30000;
+
+          return {
+            id: sor.id,
+            becenev: sor.becenev,
+            csatlakozva: sor.csatlakozva,
+            pont: sor.pont,
+            teljesitettRendelesek: sor.teljesitett_rendelesek,
+            utolsoJelzes,
+            nincsKapcsolat
+          };
+        });
 
         return valaszKuldese(valasz, 200, {
           sikeres: true,
-          jatekosok
+          jatekosok,
+          szerverido: new Date(most).toISOString()
         });
       }
     }
@@ -2009,14 +2090,16 @@ function httpKezelo(mod, engedelyezettEredetek) {
           tanora_id,
           becenev,
           csatlakozva,
-          jatekos_token_hash
-        ) VALUES (?, ?, ?, ?, ?)
+          jatekos_token_hash,
+          utolso_jelzes
+        ) VALUES (?, ?, ?, ?, ?, ?)
       `).run(
         id,
         tanora.id,
         becenev,
         csatlakozva,
-        tokenHash(jatekosToken)
+        tokenHash(jatekosToken),
+        csatlakozva
       );
 
       return valaszKuldese(valasz, 201, {
@@ -2093,6 +2176,13 @@ function httpKezelo(mod, engedelyezettEredetek) {
         jatekos.csalad_szuro_verzio === 2 ? 2 : 1;
 
       const most = Date.now();
+
+      db.prepare(`
+        UPDATE tanora_jatekosok
+        SET utolso_jelzes = ?
+        WHERE id = ?
+      `).run(most, jatekos.id);
+
       let allapot = "varakozik";
       let lejarat = null;
 
