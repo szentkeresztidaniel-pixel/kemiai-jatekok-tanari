@@ -1,0 +1,19 @@
+# Helyi adatbázis és mentések
+kemia-szerver/adatok/
+kemia-szerver/biztonsagi-mentesek/
+*.sqlite
+*.sqlite-*
+
+# Ideiglenes / helyi
+.cursor/
+.env
+.env.*
+_proba*
+_ui-bridge*
+_inject*
+
+# Rendszer
+Thumbs.db
+Desktop.ini
+.DS_Store
+node_modules/

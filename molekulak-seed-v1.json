@@ -1,0 +1,9597 @@
+{
+  "schemaVerzio": 1,
+  "exportIdeje": "2026-09-17T21:54:00.006Z",
+  "forras": "szerves-kemiai-jatek",
+  "molekulaDarab": 96,
+  "molekulak": [
+    {
+      "id": "terc-butil-metil-eter",
+      "osszegkeplet": "C5H12O",
+      "izomerCsoportId": "C5H12O",
+      "alapvazId": "terc-butil-metil-eter",
+      "csaladok": [
+        "eter",
+        "elagazo"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ]
+      ],
+      "nevek": {
+        "preferalt": "2-metoxi-2-metilpropán",
+        "alternativak": [
+          {
+            "nev": "terc-butil-metil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "metil-terc-butil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "tert-butil-metil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "metil-tert-butil-éter",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "izobutil-metil-eter",
+      "osszegkeplet": "C5H12O",
+      "izomerCsoportId": "C5H12O",
+      "alapvazId": "izobutil-metil-eter",
+      "csaladok": [
+        "eter",
+        "elagazo"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ]
+      ],
+      "nevek": {
+        "preferalt": "1-metoxi-2-metilpropán",
+        "alternativak": [
+          {
+            "nev": "izobutil-metil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "metil-izobutil-éter",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "benzol",
+      "osszegkeplet": "C6H6",
+      "izomerCsoportId": "C6H6",
+      "alapvazId": "benzol",
+      "csaladok": [
+        "aromas",
+        "szenhidrogen"
+      ],
+      "nehezseg": 1,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "benzol",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metilbenzol",
+      "osszegkeplet": "C7H8",
+      "izomerCsoportId": "C7H8",
+      "alapvazId": "metilbenzol",
+      "csaladok": [
+        "aromas",
+        "alkilbenzol"
+      ],
+      "nehezseg": 1,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "toluol",
+        "alternativak": [
+          {
+            "nev": "metilbenzol",
+            "tipus": "altalanos-iupac"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "etilbenzol",
+      "osszegkeplet": "C8H10",
+      "izomerCsoportId": "C8H10",
+      "alapvazId": "etilbenzol",
+      "csaladok": [
+        "aromas",
+        "alkilbenzol"
+      ],
+      "nehezseg": 1,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -195,
+          "y": 0
+        },
+        {
+          "x": -280,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "etilbenzol",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "1-2-dimetilbenzol",
+      "osszegkeplet": "C8H10",
+      "izomerCsoportId": "C8H10",
+      "alapvazId": "1-2-dimetilbenzol",
+      "csaladok": [
+        "aromas",
+        "alkilbenzol"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          1,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": -100.09326434875342,
+          "y": -172.88836569330135
+        }
+      ],
+      "nevek": {
+        "preferalt": "1,2-dimetilbenzol",
+        "alternativak": [
+          {
+            "nev": "o-xilol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "orto-xilol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "1-3-dimetilbenzol",
+      "osszegkeplet": "C8H10",
+      "izomerCsoportId": "C8H10",
+      "alapvazId": "1-3-dimetilbenzol",
+      "csaladok": [
+        "aromas",
+        "alkilbenzol"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          2,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": 100.09326434875342,
+          "y": -172.88836569330135
+        }
+      ],
+      "nevek": {
+        "preferalt": "1,3-dimetilbenzol",
+        "alternativak": [
+          {
+            "nev": "m-xilol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "meta-xilol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "1-4-dimetilbenzol",
+      "osszegkeplet": "C8H10",
+      "izomerCsoportId": "C8H10",
+      "alapvazId": "1-4-dimetilbenzol",
+      "csaladok": [
+        "aromas",
+        "alkilbenzol"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": 200,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "1,4-dimetilbenzol",
+        "alternativak": [
+          {
+            "nev": "p-xilol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "para-xilol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilfenol",
+      "osszegkeplet": "C7H8O",
+      "izomerCsoportId": "C7H8O",
+      "alapvazId": "2-metilfenol",
+      "csaladok": [
+        "fenol",
+        "aromas"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          1,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": -100.09326434875342,
+          "y": -172.88836569330135
+        }
+      ],
+      "nevek": {
+        "preferalt": "2-metilfenol",
+        "alternativak": [
+          {
+            "nev": "o-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "orto-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "o-metilfenol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "orto-metilfenol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilfenol",
+      "osszegkeplet": "C7H8O",
+      "izomerCsoportId": "C7H8O",
+      "alapvazId": "3-metilfenol",
+      "csaladok": [
+        "fenol",
+        "aromas"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          2,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": 100.09326434875342,
+          "y": -172.88836569330135
+        }
+      ],
+      "nevek": {
+        "preferalt": "3-metilfenol",
+        "alternativak": [
+          {
+            "nev": "m-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "meta-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "m-metilfenol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "meta-metilfenol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilfenol",
+      "osszegkeplet": "C7H8O",
+      "izomerCsoportId": "C7H8O",
+      "alapvazId": "4-metilfenol",
+      "csaladok": [
+        "fenol",
+        "aromas"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          2
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -110,
+          "y": 0
+        },
+        {
+          "x": -55,
+          "y": -95
+        },
+        {
+          "x": 55,
+          "y": -95
+        },
+        {
+          "x": 110,
+          "y": 0
+        },
+        {
+          "x": 55,
+          "y": 95
+        },
+        {
+          "x": -55,
+          "y": 95
+        },
+        {
+          "x": -200,
+          "y": 0
+        },
+        {
+          "x": 200,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "4-metilfenol",
+        "alternativak": [
+          {
+            "nev": "p-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "para-krezol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "p-metilfenol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "para-metilfenol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilbutan",
+      "osszegkeplet": "C5H12",
+      "izomerCsoportId": "C5H12",
+      "alapvazId": "2-metilbutan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilbután",
+        "alternativak": [
+          {
+            "nev": "izopentán",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilpropan",
+      "osszegkeplet": "C5H12",
+      "izomerCsoportId": "C5H12",
+      "alapvazId": "2-2-dimetilpropan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilpropán",
+        "alternativak": [
+          {
+            "nev": "neopentán",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilpentan",
+      "osszegkeplet": "C6H14",
+      "izomerCsoportId": "C6H14",
+      "alapvazId": "2-metilpentan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilpentán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilpentan",
+      "osszegkeplet": "C6H14",
+      "izomerCsoportId": "C6H14",
+      "alapvazId": "3-metilpentan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilpentán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilbutan",
+      "osszegkeplet": "C6H14",
+      "izomerCsoportId": "C6H14",
+      "alapvazId": "2-2-dimetilbutan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilbután",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-3-dimetilbutan",
+      "osszegkeplet": "C6H14",
+      "izomerCsoportId": "C6H14",
+      "alapvazId": "2-3-dimetilbutan",
+      "csaladok": [
+        "alkan",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -150,
+          "y": 30
+        },
+        {
+          "x": -50,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 150,
+          "y": 30
+        },
+        {
+          "x": -50,
+          "y": -90
+        },
+        {
+          "x": 50,
+          "y": 90
+        }
+      ],
+      "nevek": {
+        "preferalt": "2,3-dimetilbután",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilbut-1-en",
+      "osszegkeplet": "C5H10",
+      "izomerCsoportId": "C5H10",
+      "alapvazId": "2-metilbut-1-en",
+      "csaladok": [
+        "alken",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilbut-1-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbut-1-en",
+      "osszegkeplet": "C5H10",
+      "izomerCsoportId": "C5H10",
+      "alapvazId": "3-metilbut-1-en",
+      "csaladok": [
+        "alken",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbut-1-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilbut-2-en",
+      "osszegkeplet": "C5H10",
+      "izomerCsoportId": "C5H10",
+      "alapvazId": "2-metilbut-2-en",
+      "csaladok": [
+        "alken",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilbut-2-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbut-1-in",
+      "osszegkeplet": "C5H8",
+      "izomerCsoportId": "C5H8",
+      "alapvazId": "3-metilbut-1-in",
+      "csaladok": [
+        "alkin",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbut-1-in",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-3-dimetilbut-1-in",
+      "osszegkeplet": "C6H10",
+      "izomerCsoportId": "C6H10",
+      "alapvazId": "3-3-dimetilbut-1-in",
+      "csaladok": [
+        "alkin",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3,3-dimetilbut-1-in",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilpent-1-in",
+      "osszegkeplet": "C6H10",
+      "izomerCsoportId": "C6H10",
+      "alapvazId": "4-metilpent-1-in",
+      "csaladok": [
+        "alkin",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metilpent-1-in",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilpent-2-in",
+      "osszegkeplet": "C6H10",
+      "izomerCsoportId": "C6H10",
+      "alapvazId": "4-metilpent-2-in",
+      "csaladok": [
+        "alkin",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metilpent-2-in",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilpropan-1-ol",
+      "osszegkeplet": "C4H10O",
+      "izomerCsoportId": "C4H10O",
+      "alapvazId": "2-metilpropan-1-ol",
+      "csaladok": [
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilpropán-1-ol",
+        "alternativak": [
+          {
+            "nev": "izobutil-alkohol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "izobutanol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilpropan-2-ol",
+      "osszegkeplet": "C4H10O",
+      "izomerCsoportId": "C4H10O",
+      "alapvazId": "2-metilpropan-2-ol",
+      "csaladok": [
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilpropán-2-ol",
+        "alternativak": [
+          {
+            "nev": "terc-butil-alkohol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "terc-butanol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbutan-1-ol",
+      "osszegkeplet": "C5H12O",
+      "izomerCsoportId": "C5H12O",
+      "alapvazId": "3-metilbutan-1-ol",
+      "csaladok": [
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbután-1-ol",
+        "alternativak": [
+          {
+            "nev": "izoamil-alkohol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "izopentil-alkohol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilpropan-1-ol",
+      "osszegkeplet": "C5H12O",
+      "izomerCsoportId": "C5H12O",
+      "alapvazId": "2-2-dimetilpropan-1-ol",
+      "csaladok": [
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilpropán-1-ol",
+        "alternativak": [
+          {
+            "nev": "neopentil-alkohol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilbutan-2-ol",
+      "osszegkeplet": "C5H12O",
+      "izomerCsoportId": "C5H12O",
+      "alapvazId": "2-metilbutan-2-ol",
+      "csaladok": [
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilbután-2-ol",
+        "alternativak": [
+          {
+            "nev": "terc-amil-alkohol",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "terc-pentanol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "1-etoxi-2-metilpropan",
+      "osszegkeplet": "C6H14O",
+      "izomerCsoportId": "C6H14O",
+      "alapvazId": "1-etoxi-2-metilpropan",
+      "csaladok": [
+        "eter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "1-etoxi-2-metilpropán",
+        "alternativak": [
+          {
+            "nev": "etil-izobutil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "izobutil-etil-éter",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-etoxi-2-metilpropan",
+      "osszegkeplet": "C6H14O",
+      "izomerCsoportId": "C6H14O",
+      "alapvazId": "2-etoxi-2-metilpropan",
+      "csaladok": [
+        "eter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-etoxi-2-metilpropán",
+        "alternativak": [
+          {
+            "nev": "etil-terc-butil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "terc-butil-etil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "etil-tert-butil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "ETBE",
+            "tipus": "rovidites"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "1-metoxi-3-metilbutan",
+      "osszegkeplet": "C6H14O",
+      "izomerCsoportId": "C6H14O",
+      "alapvazId": "1-metoxi-3-metilbutan",
+      "csaladok": [
+        "eter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "1-metoxi-3-metilbután",
+        "alternativak": [
+          {
+            "nev": "metil-izoamil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "izoamil-metil-éter",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metoxi-2-metilbutan",
+      "osszegkeplet": "C6H14O",
+      "izomerCsoportId": "C6H14O",
+      "alapvazId": "2-metoxi-2-metilbutan",
+      "csaladok": [
+        "eter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metoxi-2-metilbután",
+        "alternativak": [
+          {
+            "nev": "terc-amil-metil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "metil-terc-amil-éter",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "TAME",
+            "tipus": "rovidites"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbutanal",
+      "osszegkeplet": "C5H10O",
+      "izomerCsoportId": "C5H10O",
+      "alapvazId": "3-metilbutanal",
+      "csaladok": [
+        "aldehid",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbutanal",
+        "alternativak": [
+          {
+            "nev": "izovaleraldehid",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilpropanal",
+      "osszegkeplet": "C5H10O",
+      "izomerCsoportId": "C5H10O",
+      "alapvazId": "2-2-dimetilpropanal",
+      "csaladok": [
+        "aldehid",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilpropanal",
+        "alternativak": [
+          {
+            "nev": "pivalaldehid",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilpentanal",
+      "osszegkeplet": "C6H12O",
+      "izomerCsoportId": "C6H12O",
+      "alapvazId": "4-metilpentanal",
+      "csaladok": [
+        "aldehid",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metilpentanal",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-3-dimetilbutanal",
+      "osszegkeplet": "C6H12O",
+      "izomerCsoportId": "C6H12O",
+      "alapvazId": "3-3-dimetilbutanal",
+      "csaladok": [
+        "aldehid",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3,3-dimetilbutanal",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbutan-2-on",
+      "osszegkeplet": "C5H10O",
+      "izomerCsoportId": "C5H10O",
+      "alapvazId": "3-metilbutan-2-on",
+      "csaladok": [
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbután-2-on",
+        "alternativak": [
+          {
+            "nev": "metil-izopropil-keton",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilpentan-2-on",
+      "osszegkeplet": "C6H12O",
+      "izomerCsoportId": "C6H12O",
+      "alapvazId": "4-metilpentan-2-on",
+      "csaladok": [
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metilpentán-2-on",
+        "alternativak": [
+          {
+            "nev": "metil-izobutil-keton",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "MIBK",
+            "tipus": "rovidites"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-3-dimetilbutan-2-on",
+      "osszegkeplet": "C6H12O",
+      "izomerCsoportId": "C6H12O",
+      "alapvazId": "3-3-dimetilbutan-2-on",
+      "csaladok": [
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3,3-dimetilbután-2-on",
+        "alternativak": [
+          {
+            "nev": "pinakolon",
+            "tipus": "trivialis"
+          },
+          {
+            "nev": "terc-butil-metil-keton",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilpropansav",
+      "osszegkeplet": "C4H8O2",
+      "izomerCsoportId": "C4H8O2",
+      "alapvazId": "2-metilpropansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2-metilpropánsav",
+        "alternativak": [
+          {
+            "nev": "izovajsav",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-metilbutansav",
+      "osszegkeplet": "C5H10O2",
+      "izomerCsoportId": "C5H10O2",
+      "alapvazId": "3-metilbutansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 2,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-metilbutánsav",
+        "alternativak": [
+          {
+            "nev": "izovaleriánsav",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilpropansav",
+      "osszegkeplet": "C5H10O2",
+      "izomerCsoportId": "C5H10O2",
+      "alapvazId": "2-2-dimetilpropansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilpropánsav",
+        "alternativak": [
+          {
+            "nev": "pivalinsav",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metilpentansav",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "4-metilpentansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metilpentánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilbutansav",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "2-2-dimetilbutansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetilbutánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-3-dimetilbutansav",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "3-3-dimetilbutansav",
+      "csaladok": [
+        "karbonsav",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3,3-dimetilbutánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-2-metilpropanoat",
+      "osszegkeplet": "C5H10O2",
+      "izomerCsoportId": "C5H10O2",
+      "alapvazId": "metil-2-metilpropanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "metil-2-metilpropanoát",
+        "alternativak": [
+          {
+            "nev": "metil-izobutirát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "etil-2-metilpropanoat",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "etil-2-metilpropanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "etil-2-metilpropanoát",
+        "alternativak": [
+          {
+            "nev": "etil-izobutirát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-3-metilbutanoat",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "metil-3-metilbutanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "metil-3-metilbutanoát",
+        "alternativak": [
+          {
+            "nev": "metil-izovalerát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-2-2-dimetilpropanoat",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "metil-2-2-dimetilpropanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "metil-2,2-dimetilpropanoát",
+        "alternativak": [
+          {
+            "nev": "metil-pivalát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "etil-3-metilbutanoat",
+      "osszegkeplet": "C7H14O2",
+      "izomerCsoportId": "C7H14O2",
+      "alapvazId": "etil-3-metilbutanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "etil-3-metilbutanoát",
+        "alternativak": [
+          {
+            "nev": "etil-izovalerát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-4-metilpentanoat",
+      "osszegkeplet": "C7H14O2",
+      "izomerCsoportId": "C7H14O2",
+      "alapvazId": "metil-4-metilpentanoat",
+      "csaladok": [
+        "eszter",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -140,
+          "y": 0
+        },
+        {
+          "x": -70,
+          "y": 35
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 140,
+          "y": 0
+        },
+        {
+          "x": 70,
+          "y": 120
+        },
+        {
+          "x": -140,
+          "y": -90
+        },
+        {
+          "x": -220,
+          "y": 35
+        },
+        {
+          "x": -290,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-4-metilpentanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-metilpropan-1-2-diol",
+      "osszegkeplet": "C4H10O2",
+      "izomerCsoportId": "C4H10O2",
+      "alapvazId": "2-metilpropan-1-2-diol",
+      "csaladok": [
+        "diol",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -90,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 90,
+          "y": 55
+        },
+        {
+          "x": 90,
+          "y": -55
+        },
+        {
+          "x": -175,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -95
+        }
+      ],
+      "nevek": {
+        "preferalt": "2-metilpropán-1,2-diol",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetilpropan-1-3-diol",
+      "osszegkeplet": "C5H12O2",
+      "izomerCsoportId": "C5H12O2",
+      "alapvazId": "2-2-dimetilpropan-1-3-diol",
+      "csaladok": [
+        "diol",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          1
+        ],
+        [
+          2,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -100,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -90
+        },
+        {
+          "x": 0,
+          "y": 90
+        },
+        {
+          "x": -180,
+          "y": 0
+        },
+        {
+          "x": 180,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "2,2-dimetilpropán-1,3-diol",
+        "alternativak": [
+          {
+            "nev": "neopentil-glikol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-hidroxi-3-metilbutan-2-on",
+      "osszegkeplet": "C5H10O2",
+      "izomerCsoportId": "C5H10O2",
+      "alapvazId": "3-hidroxi-3-metilbutan-2-on",
+      "csaladok": [
+        "hidroxi-keton",
+        "keton",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          2,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -160,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 55
+        },
+        {
+          "x": 140,
+          "y": -55
+        },
+        {
+          "x": -60,
+          "y": -95
+        },
+        {
+          "x": 50,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "3-hidroxi-3-metilbután-2-on",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-hidroxi-4-metilpentan-2-on",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "4-hidroxi-4-metilpentan-2-on",
+      "csaladok": [
+        "hidroxi-keton",
+        "keton",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          2
+        ],
+        [
+          3,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -220,
+          "y": 0
+        },
+        {
+          "x": -120,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 170,
+          "y": 55
+        },
+        {
+          "x": 170,
+          "y": -55
+        },
+        {
+          "x": -120,
+          "y": -95
+        },
+        {
+          "x": 80,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "4-hidroxi-4-metilpentán-2-on",
+        "alternativak": [
+          {
+            "nev": "diaceton-alkohol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-hidroxi-3-metilbutanal",
+      "osszegkeplet": "C5H10O2",
+      "izomerCsoportId": "C5H10O2",
+      "alapvazId": "3-hidroxi-3-metilbutanal",
+      "csaladok": [
+        "hidroxi-aldehid",
+        "aldehid",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          2,
+          6,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "3-hidroxi-3-metilbutanal",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-hidroxi-4-metilpentanal",
+      "osszegkeplet": "C6H12O2",
+      "izomerCsoportId": "C6H12O2",
+      "alapvazId": "4-hidroxi-4-metilpentanal",
+      "csaladok": [
+        "hidroxi-aldehid",
+        "aldehid",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          3,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-hidroxi-4-metilpentanal",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "3-hidroxi-3-metilbutansav",
+      "osszegkeplet": "C5H10O3",
+      "izomerCsoportId": "C5H10O3",
+      "alapvazId": "3-hidroxi-3-metilbutansav",
+      "csaladok": [
+        "hidroxi-karbonsav",
+        "karbonsav",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          2,
+          7,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -140,
+          "y": 0
+        },
+        {
+          "x": -40,
+          "y": 0
+        },
+        {
+          "x": 60,
+          "y": 0
+        },
+        {
+          "x": 150,
+          "y": 55
+        },
+        {
+          "x": 150,
+          "y": -55
+        },
+        {
+          "x": -140,
+          "y": -95
+        },
+        {
+          "x": -230,
+          "y": 55
+        },
+        {
+          "x": 60,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "3-hidroxi-3-metilbutánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-hidroxi-4-metilpentansav",
+      "osszegkeplet": "C6H12O3",
+      "izomerCsoportId": "C6H12O3",
+      "alapvazId": "4-hidroxi-4-metilpentansav",
+      "csaladok": [
+        "hidroxi-karbonsav",
+        "karbonsav",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-hidroxi-4-metilpentánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetil-3-oxobutansav",
+      "osszegkeplet": "C6H10O3",
+      "izomerCsoportId": "C6H10O3",
+      "alapvazId": "2-2-dimetil-3-oxobutansav",
+      "csaladok": [
+        "oxokarbonsav",
+        "karbonsav",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "2,2-dimetil-3-oxobutánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-metil-3-oxopentansav",
+      "osszegkeplet": "C6H10O3",
+      "izomerCsoportId": "C6H10O3",
+      "alapvazId": "4-metil-3-oxopentansav",
+      "csaladok": [
+        "oxokarbonsav",
+        "karbonsav",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4-metil-3-oxopentánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2-2-dimetil-4-oxopentansav",
+      "osszegkeplet": "C7H12O3",
+      "izomerCsoportId": "C7H12O3",
+      "alapvazId": "2-2-dimetil-4-oxopentansav",
+      "csaladok": [
+        "oxokarbonsav",
+        "karbonsav",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          2
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -220,
+          "y": 0
+        },
+        {
+          "x": -120,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 180,
+          "y": 0
+        },
+        {
+          "x": -120,
+          "y": -95
+        },
+        {
+          "x": -120,
+          "y": 95
+        },
+        {
+          "x": -220,
+          "y": -95
+        },
+        {
+          "x": -310,
+          "y": 55
+        },
+        {
+          "x": 80,
+          "y": -95
+        }
+      ],
+      "nevek": {
+        "preferalt": "2,2-dimetil-4-oxopentánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4-4-dimetil-3-oxopentansav",
+      "osszegkeplet": "C7H12O3",
+      "izomerCsoportId": "C7H12O3",
+      "alapvazId": "4-4-dimetil-3-oxopentansav",
+      "csaladok": [
+        "oxokarbonsav",
+        "karbonsav",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          3,
+          6,
+          1
+        ],
+        [
+          0,
+          7,
+          2
+        ],
+        [
+          0,
+          8,
+          1
+        ],
+        [
+          2,
+          9,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "4,4-dimetil-3-oxopentánsav",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-3-hidroxi-3-metilbutanoat",
+      "osszegkeplet": "C6H12O3",
+      "izomerCsoportId": "C6H12O3",
+      "alapvazId": "metil-3-hidroxi-3-metilbutanoat",
+      "csaladok": [
+        "hidroxi-eszter",
+        "eszter",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          2,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -160,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 0
+        },
+        {
+          "x": 50,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 55
+        },
+        {
+          "x": 140,
+          "y": -55
+        },
+        {
+          "x": -160,
+          "y": -95
+        },
+        {
+          "x": -250,
+          "y": 55
+        },
+        {
+          "x": -340,
+          "y": 55
+        },
+        {
+          "x": 50,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-3-hidroxi-3-metilbutanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "etil-3-hidroxi-3-metilbutanoat",
+      "osszegkeplet": "C7H14O3",
+      "izomerCsoportId": "C7H14O3",
+      "alapvazId": "etil-3-hidroxi-3-metilbutanoat",
+      "csaladok": [
+        "hidroxi-eszter",
+        "eszter",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          2,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -120,
+          "y": 0
+        },
+        {
+          "x": -20,
+          "y": 0
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 180,
+          "y": 55
+        },
+        {
+          "x": 180,
+          "y": -55
+        },
+        {
+          "x": -120,
+          "y": -95
+        },
+        {
+          "x": -210,
+          "y": 55
+        },
+        {
+          "x": -300,
+          "y": 55
+        },
+        {
+          "x": -390,
+          "y": 55
+        },
+        {
+          "x": 90,
+          "y": 95
+        }
+      ],
+      "nevek": {
+        "preferalt": "etil-3-hidroxi-3-metilbutanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-4-hidroxi-4-metilpentanoat",
+      "osszegkeplet": "C7H14O3",
+      "izomerCsoportId": "C7H14O3",
+      "alapvazId": "metil-4-hidroxi-4-metilpentanoat",
+      "csaladok": [
+        "hidroxi-eszter",
+        "eszter",
+        "alkohol",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -180,
+          "y": 0
+        },
+        {
+          "x": -80,
+          "y": 0
+        },
+        {
+          "x": 20,
+          "y": 0
+        },
+        {
+          "x": 120,
+          "y": 0
+        },
+        {
+          "x": 210,
+          "y": 55
+        },
+        {
+          "x": 210,
+          "y": -55
+        },
+        {
+          "x": -180,
+          "y": -90
+        },
+        {
+          "x": -270,
+          "y": 60
+        },
+        {
+          "x": -360,
+          "y": 60
+        },
+        {
+          "x": 120,
+          "y": -95
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-4-hidroxi-4-metilpentanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-2-2-dimetil-3-oxobutanoat",
+      "osszegkeplet": "C7H12O3",
+      "izomerCsoportId": "C7H12O3",
+      "alapvazId": "metil-2-2-dimetil-3-oxobutanoat",
+      "csaladok": [
+        "oxo-eszter",
+        "eszter",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          2,
+          9,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "metil-2,2-dimetil-3-oxobutanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "etil-2-2-dimetil-3-oxobutanoat",
+      "osszegkeplet": "C8H14O3",
+      "izomerCsoportId": "C8H14O3",
+      "alapvazId": "etil-2-2-dimetil-3-oxobutanoat",
+      "csaladok": [
+        "oxo-eszter",
+        "eszter",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          2,
+          10,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "etil-2,2-dimetil-3-oxobutanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "metil-4-metil-3-oxopentanoat",
+      "osszegkeplet": "C7H12O3",
+      "izomerCsoportId": "C7H12O3",
+      "alapvazId": "metil-4-metil-3-oxopentanoat",
+      "csaladok": [
+        "oxo-eszter",
+        "eszter",
+        "keton",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          0,
+          6,
+          2
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          2,
+          9,
+          2
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -140,
+          "y": 0
+        },
+        {
+          "x": -70,
+          "y": 35
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 70,
+          "y": 35
+        },
+        {
+          "x": 140,
+          "y": 0
+        },
+        {
+          "x": 70,
+          "y": 120
+        },
+        {
+          "x": -140,
+          "y": -90
+        },
+        {
+          "x": -220,
+          "y": 35
+        },
+        {
+          "x": -290,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": -90
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-4-metil-3-oxopentanoát",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4R-4-1-1-dimetiletil-heptan-1-ol",
+      "osszegkeplet": "C11H24O",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptan-1-ol-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptan-1-ol",
+      "csaladok": [
+        "alkohol",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4R)-4-(1,1-dimetiletil)heptán-1-ol",
+        "alternativak": [
+          {
+            "nev": "(4R)-4-terc-butilheptán-1-ol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4S-4-1-1-dimetiletil-heptan-1-ol",
+      "osszegkeplet": "C11H24O",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptan-1-ol-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptan-1-ol",
+      "csaladok": [
+        "alkohol",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4S)-4-(1,1-dimetiletil)heptán-1-ol",
+        "alternativak": [
+          {
+            "nev": "(4S)-4-terc-butilheptán-1-ol",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4R-4-1-1-dimetiletil-heptan-2-on",
+      "osszegkeplet": "C11H22O",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptan-2-on-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptan-2-on",
+      "csaladok": [
+        "keton",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          1,
+          11,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4R)-4-(1,1-dimetiletil)heptán-2-on",
+        "alternativak": [
+          {
+            "nev": "(4R)-4-terc-butilheptán-2-on",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4S-4-1-1-dimetiletil-heptan-2-on",
+      "osszegkeplet": "C11H22O",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptan-2-on-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptan-2-on",
+      "csaladok": [
+        "keton",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          1,
+          11,
+          2
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4S)-4-(1,1-dimetiletil)heptán-2-on",
+        "alternativak": [
+          {
+            "nev": "(4S)-4-terc-butilheptán-2-on",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4R-4-1-1-dimetiletil-heptansav",
+      "osszegkeplet": "C11H22O2",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptansav-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptansav",
+      "csaladok": [
+        "karbonsav",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          2
+        ],
+        [
+          0,
+          12,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4R)-4-(1,1-dimetiletil)heptánsav",
+        "alternativak": [
+          {
+            "nev": "(4R)-4-terc-butilheptánsav",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4S-4-1-1-dimetiletil-heptansav",
+      "osszegkeplet": "C11H22O2",
+      "izomerCsoportId": "4-1-1-dimetiletil-heptansav-R-S",
+      "alapvazId": "4-1-1-dimetiletil-heptansav",
+      "csaladok": [
+        "karbonsav",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          2
+        ],
+        [
+          0,
+          12,
+          1
+        ]
+      ],
+      "elozetPoziciok": null,
+      "nevek": {
+        "preferalt": "(4S)-4-(1,1-dimetiletil)heptánsav",
+        "alternativak": [
+          {
+            "nev": "(4S)-4-terc-butilheptánsav",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4R-metil-4-1-1-dimetiletil-heptanoat",
+      "osszegkeplet": "C12H24O2",
+      "izomerCsoportId": "metil-4-1-1-dimetiletil-heptanoat-R-S",
+      "alapvazId": "metil-4-1-1-dimetiletil-heptanoat",
+      "csaladok": [
+        "eszter",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          2
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          12,
+          13,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -240,
+          "y": 0
+        },
+        {
+          "x": -160,
+          "y": 35
+        },
+        {
+          "x": -80,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 35
+        },
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 160,
+          "y": 35
+        },
+        {
+          "x": 240,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 140
+        },
+        {
+          "x": 0,
+          "y": 225
+        },
+        {
+          "x": -75,
+          "y": 180
+        },
+        {
+          "x": 75,
+          "y": 180
+        },
+        {
+          "x": -240,
+          "y": -90
+        },
+        {
+          "x": -320,
+          "y": 35
+        },
+        {
+          "x": -400,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-(4R)-4-(1,1-dimetiletil)heptanoát",
+        "alternativak": [
+          {
+            "nev": "metil-(4R)-4-terc-butilheptanoát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "4S-metil-4-1-1-dimetiletil-heptanoat",
+      "osszegkeplet": "C12H24O2",
+      "izomerCsoportId": "metil-4-1-1-dimetiletil-heptanoat-R-S",
+      "alapvazId": "metil-4-1-1-dimetiletil-heptanoat",
+      "csaladok": [
+        "eszter",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer",
+        "R-S"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "O",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          3,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          7,
+          9,
+          1
+        ],
+        [
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          11,
+          2
+        ],
+        [
+          0,
+          12,
+          1
+        ],
+        [
+          12,
+          13,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -240,
+          "y": 0
+        },
+        {
+          "x": -160,
+          "y": 35
+        },
+        {
+          "x": -80,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 35
+        },
+        {
+          "x": 80,
+          "y": 0
+        },
+        {
+          "x": 160,
+          "y": 35
+        },
+        {
+          "x": 240,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 140
+        },
+        {
+          "x": 0,
+          "y": 225
+        },
+        {
+          "x": -75,
+          "y": 180
+        },
+        {
+          "x": 75,
+          "y": 180
+        },
+        {
+          "x": -240,
+          "y": -90
+        },
+        {
+          "x": -320,
+          "y": 35
+        },
+        {
+          "x": -400,
+          "y": 0
+        }
+      ],
+      "nevek": {
+        "preferalt": "metil-(4S)-4-(1,1-dimetiletil)heptanoát",
+        "alternativak": [
+          {
+            "nev": "metil-(4S)-4-terc-butilheptanoát",
+            "tipus": "trivialis"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              7,
+              2,
+              4
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 7,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "6-1-2-dimetilpropil-4-etil-3-8-dimetilundekan",
+      "osszegkeplet": "C20H42",
+      "izomerCsoportId": "C20H42",
+      "alapvazId": "6-1-2-dimetilpropil-4-etil-3-8-dimetilundekan",
+      "csaladok": [
+        "alkan",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          9,
+          10,
+          1
+        ],
+        [
+          2,
+          11,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          12,
+          13,
+          1
+        ],
+        [
+          7,
+          14,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          15,
+          16,
+          1
+        ],
+        [
+          16,
+          17,
+          1
+        ],
+        [
+          15,
+          18,
+          1
+        ],
+        [
+          16,
+          19,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -350,
+          "y": 0
+        },
+        {
+          "x": -280,
+          "y": 25
+        },
+        {
+          "x": -210,
+          "y": 0
+        },
+        {
+          "x": -140,
+          "y": 25
+        },
+        {
+          "x": -70,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 25
+        },
+        {
+          "x": 210,
+          "y": 0
+        },
+        {
+          "x": 280,
+          "y": 25
+        },
+        {
+          "x": 350,
+          "y": 0
+        },
+        {
+          "x": -210,
+          "y": -85
+        },
+        {
+          "x": -140,
+          "y": 110
+        },
+        {
+          "x": -140,
+          "y": 195
+        },
+        {
+          "x": 140,
+          "y": -85
+        },
+        {
+          "x": 0,
+          "y": -75
+        },
+        {
+          "x": 0,
+          "y": -155
+        },
+        {
+          "x": 0,
+          "y": -235
+        },
+        {
+          "x": -90,
+          "y": -75
+        },
+        {
+          "x": 90,
+          "y": -155
+        }
+      ],
+      "nevek": {
+        "preferalt": "6-(1,2-dimetilpropil)-4-etil-3,8-dimetilundekán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "6-1-1-2-trimetilpropil-4-etil-3-8-dimetilundekan",
+      "osszegkeplet": "C21H44",
+      "izomerCsoportId": "C21H44",
+      "alapvazId": "6-1-1-2-trimetilpropil-4-etil-3-8-dimetilundekan",
+      "csaladok": [
+        "alkan",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          9,
+          10,
+          1
+        ],
+        [
+          2,
+          11,
+          1
+        ],
+        [
+          3,
+          12,
+          1
+        ],
+        [
+          12,
+          13,
+          1
+        ],
+        [
+          7,
+          14,
+          1
+        ],
+        [
+          5,
+          15,
+          1
+        ],
+        [
+          15,
+          16,
+          1
+        ],
+        [
+          16,
+          17,
+          1
+        ],
+        [
+          15,
+          18,
+          1
+        ],
+        [
+          15,
+          19,
+          1
+        ],
+        [
+          16,
+          20,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -350,
+          "y": 0
+        },
+        {
+          "x": -280,
+          "y": 25
+        },
+        {
+          "x": -210,
+          "y": 0
+        },
+        {
+          "x": -140,
+          "y": 25
+        },
+        {
+          "x": -70,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 25
+        },
+        {
+          "x": 210,
+          "y": 0
+        },
+        {
+          "x": 280,
+          "y": 25
+        },
+        {
+          "x": 350,
+          "y": 0
+        },
+        {
+          "x": -210,
+          "y": -85
+        },
+        {
+          "x": -140,
+          "y": 110
+        },
+        {
+          "x": -140,
+          "y": 195
+        },
+        {
+          "x": 140,
+          "y": -85
+        },
+        {
+          "x": 0,
+          "y": -75
+        },
+        {
+          "x": 0,
+          "y": -165
+        },
+        {
+          "x": 0,
+          "y": -255
+        },
+        {
+          "x": -95,
+          "y": -75
+        },
+        {
+          "x": 95,
+          "y": -75
+        },
+        {
+          "x": 95,
+          "y": -165
+        }
+      ],
+      "nevek": {
+        "preferalt": "4-etil-3,8-dimetil-6-(1,1,2-trimetilpropil)undekán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "6-1-etil-1-metilpropil-3-8-dimetilundekan",
+      "osszegkeplet": "C19H40",
+      "izomerCsoportId": "C19H40",
+      "alapvazId": "6-1-etil-1-metilpropil-3-8-dimetilundekan",
+      "csaladok": [
+        "alkan",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          9,
+          10,
+          1
+        ],
+        [
+          2,
+          11,
+          1
+        ],
+        [
+          7,
+          12,
+          1
+        ],
+        [
+          5,
+          13,
+          1
+        ],
+        [
+          13,
+          14,
+          1
+        ],
+        [
+          14,
+          15,
+          1
+        ],
+        [
+          13,
+          16,
+          1
+        ],
+        [
+          16,
+          17,
+          1
+        ],
+        [
+          13,
+          18,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -350,
+          "y": 0
+        },
+        {
+          "x": -280,
+          "y": 25
+        },
+        {
+          "x": -210,
+          "y": 0
+        },
+        {
+          "x": -140,
+          "y": 25
+        },
+        {
+          "x": -70,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 25
+        },
+        {
+          "x": 210,
+          "y": 0
+        },
+        {
+          "x": 280,
+          "y": 25
+        },
+        {
+          "x": 350,
+          "y": 0
+        },
+        {
+          "x": -210,
+          "y": -85
+        },
+        {
+          "x": 140,
+          "y": -85
+        },
+        {
+          "x": 0,
+          "y": -75
+        },
+        {
+          "x": 0,
+          "y": -165
+        },
+        {
+          "x": 0,
+          "y": -255
+        },
+        {
+          "x": -95,
+          "y": -75
+        },
+        {
+          "x": -95,
+          "y": -165
+        },
+        {
+          "x": 95,
+          "y": -75
+        }
+      ],
+      "nevek": {
+        "preferalt": "6-(1-etil-1-metilpropil)-3,8-dimetilundekán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "5-1-1-dimetiletil-3-9-dietil-7-1-1-2-trimetilpropil-undekan",
+      "osszegkeplet": "C25H52",
+      "izomerCsoportId": "C25H52",
+      "alapvazId": "5-1-1-dimetiletil-3-9-dietil-7-1-1-2-trimetilpropil-undekan",
+      "csaladok": [
+        "alkan",
+        "tobb-osszetett-szubsztituens",
+        "osszetett-szubsztituens",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          8,
+          9,
+          1
+        ],
+        [
+          9,
+          10,
+          1
+        ],
+        [
+          2,
+          11,
+          1
+        ],
+        [
+          11,
+          12,
+          1
+        ],
+        [
+          8,
+          13,
+          1
+        ],
+        [
+          13,
+          14,
+          1
+        ],
+        [
+          4,
+          15,
+          1
+        ],
+        [
+          15,
+          16,
+          1
+        ],
+        [
+          15,
+          17,
+          1
+        ],
+        [
+          15,
+          18,
+          1
+        ],
+        [
+          6,
+          19,
+          1
+        ],
+        [
+          19,
+          20,
+          1
+        ],
+        [
+          20,
+          21,
+          1
+        ],
+        [
+          19,
+          22,
+          1
+        ],
+        [
+          19,
+          23,
+          1
+        ],
+        [
+          20,
+          24,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -350,
+          "y": 0
+        },
+        {
+          "x": -280,
+          "y": 25
+        },
+        {
+          "x": -210,
+          "y": 0
+        },
+        {
+          "x": -140,
+          "y": 25
+        },
+        {
+          "x": -70,
+          "y": 0
+        },
+        {
+          "x": 0,
+          "y": 25
+        },
+        {
+          "x": 70,
+          "y": 0
+        },
+        {
+          "x": 140,
+          "y": 25
+        },
+        {
+          "x": 210,
+          "y": 0
+        },
+        {
+          "x": 280,
+          "y": 25
+        },
+        {
+          "x": 350,
+          "y": 0
+        },
+        {
+          "x": -210,
+          "y": 90
+        },
+        {
+          "x": -210,
+          "y": 175
+        },
+        {
+          "x": 210,
+          "y": -90
+        },
+        {
+          "x": 210,
+          "y": -175
+        },
+        {
+          "x": -70,
+          "y": -90
+        },
+        {
+          "x": -70,
+          "y": -175
+        },
+        {
+          "x": -155,
+          "y": -90
+        },
+        {
+          "x": 15,
+          "y": -90
+        },
+        {
+          "x": 70,
+          "y": 90
+        },
+        {
+          "x": 70,
+          "y": 175
+        },
+        {
+          "x": 70,
+          "y": 260
+        },
+        {
+          "x": -15,
+          "y": 90
+        },
+        {
+          "x": 155,
+          "y": 90
+        },
+        {
+          "x": 155,
+          "y": 175
+        }
+      ],
+      "nevek": {
+        "preferalt": "5-(1,1-dimetiletil)-3,9-dietil-7-(1,1,2-trimetilpropil)undekán",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "nincs",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "E-3-metilpent-2-en",
+      "osszegkeplet": "C6H12",
+      "izomerCsoportId": "3-metilpent-2-en-E-Z",
+      "alapvazId": "3-metilpent-2-en",
+      "csaladok": [
+        "alken",
+        "sztereoizomer",
+        "E-Z",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -90,
+          "y": -55
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 55
+        },
+        {
+          "x": 275,
+          "y": 10
+        },
+        {
+          "x": 190,
+          "y": -55
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2E)-3-metilpent-2-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "Z-3-metilpent-2-en",
+      "osszegkeplet": "C6H12",
+      "izomerCsoportId": "3-metilpent-2-en-E-Z",
+      "alapvazId": "3-metilpent-2-en",
+      "csaladok": [
+        "alken",
+        "sztereoizomer",
+        "E-Z",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -90,
+          "y": -55
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": -55
+        },
+        {
+          "x": 275,
+          "y": -10
+        },
+        {
+          "x": 190,
+          "y": 55
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2Z)-3-metilpent-2-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "E-3-4-dimetilhept-3-en",
+      "osszegkeplet": "C9H18",
+      "izomerCsoportId": "3-4-dimetilhept-3-en-E-Z",
+      "alapvazId": "3-4-dimetilhept-3-en",
+      "csaladok": [
+        "alken",
+        "sztereoizomer",
+        "E-Z",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          2,
+          7,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -160,
+          "y": -20
+        },
+        {
+          "x": -80,
+          "y": -60
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 180,
+          "y": 60
+        },
+        {
+          "x": 260,
+          "y": 10
+        },
+        {
+          "x": 340,
+          "y": 50
+        },
+        {
+          "x": -70,
+          "y": 70
+        },
+        {
+          "x": 170,
+          "y": -70
+        }
+      ],
+      "nevek": {
+        "preferalt": "(3E)-3,4-dimetilhept-3-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [
+          {
+            "atom1Index": 2,
+            "atom2Index": 3,
+            "elsoPrioritasIndex": 1,
+            "masodikPrioritasIndex": 4,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "Z-3-4-dimetilhept-3-en",
+      "osszegkeplet": "C9H18",
+      "izomerCsoportId": "3-4-dimetilhept-3-en-E-Z",
+      "alapvazId": "3-4-dimetilhept-3-en",
+      "csaladok": [
+        "alken",
+        "sztereoizomer",
+        "E-Z",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          1
+        ],
+        [
+          2,
+          7,
+          1
+        ],
+        [
+          3,
+          8,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -160,
+          "y": -20
+        },
+        {
+          "x": -80,
+          "y": -60
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 100,
+          "y": 0
+        },
+        {
+          "x": 180,
+          "y": -60
+        },
+        {
+          "x": 260,
+          "y": -10
+        },
+        {
+          "x": 340,
+          "y": -50
+        },
+        {
+          "x": -70,
+          "y": 70
+        },
+        {
+          "x": 170,
+          "y": 70
+        }
+      ],
+      "nevek": {
+        "preferalt": "(3Z)-3,4-dimetilhept-3-én",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [],
+        "kettosKotesek": [
+          {
+            "atom1Index": 2,
+            "atom2Index": 3,
+            "elsoPrioritasIndex": 1,
+            "masodikPrioritasIndex": 4,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2E-4R-6E-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": 70
+        },
+        {
+          "x": 335,
+          "y": 20
+        },
+        {
+          "x": -60,
+          "y": 150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2E,4R,6E)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "E"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2E-4S-6E-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": 70
+        },
+        {
+          "x": 335,
+          "y": 20
+        },
+        {
+          "x": -60,
+          "y": 150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2E,4S,6E)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "E"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2E-4R-6Z-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": -70
+        },
+        {
+          "x": 335,
+          "y": -20
+        },
+        {
+          "x": -60,
+          "y": 150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2E,4R,6Z)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "E"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2E-4S-6Z-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": 70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": -70
+        },
+        {
+          "x": 335,
+          "y": -20
+        },
+        {
+          "x": -60,
+          "y": 150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2E,4S,6Z)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "E"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2Z-4R-6E-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": -70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": 70
+        },
+        {
+          "x": 335,
+          "y": 20
+        },
+        {
+          "x": -60,
+          "y": -150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2Z,4R,6E)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "Z"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2Z-4S-6E-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": -70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": 70
+        },
+        {
+          "x": 335,
+          "y": 20
+        },
+        {
+          "x": -60,
+          "y": -150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2Z,4S,6E)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "Z"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "E"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2Z-4R-6Z-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": -70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": -70
+        },
+        {
+          "x": 335,
+          "y": -20
+        },
+        {
+          "x": -60,
+          "y": -150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2Z,4R,6Z)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "Z"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2Z-4S-6Z-4-metilnona-2-6-dien",
+      "osszegkeplet": "C10H18",
+      "izomerCsoportId": "4-metilnona-2-6-dien-E-Z-R-S",
+      "alapvazId": "4-metilnona-2-6-dien",
+      "csaladok": [
+        "dien",
+        "sztereoizomer",
+        "tobb-E-Z",
+        "R-S",
+        "enantiomer",
+        "elagazo",
+        "nyilt-lancu"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          4,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          7,
+          1
+        ],
+        [
+          7,
+          8,
+          1
+        ],
+        [
+          3,
+          9,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -300,
+          "y": -70
+        },
+        {
+          "x": -230,
+          "y": 0
+        },
+        {
+          "x": -130,
+          "y": 0
+        },
+        {
+          "x": -60,
+          "y": -70
+        },
+        {
+          "x": 20,
+          "y": -70
+        },
+        {
+          "x": 90,
+          "y": 0
+        },
+        {
+          "x": 190,
+          "y": 0
+        },
+        {
+          "x": 260,
+          "y": -70
+        },
+        {
+          "x": 335,
+          "y": -20
+        },
+        {
+          "x": -60,
+          "y": -150
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2Z,4S,6Z)-4-metilnona-2,6-dién",
+        "alternativak": []
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 3,
+            "prioritasIndexek": [
+              2,
+              4,
+              9
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 9,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [
+          {
+            "atom1Index": 1,
+            "atom2Index": 2,
+            "elsoPrioritasIndex": 0,
+            "masodikPrioritasIndex": 3,
+            "konfiguracio": "Z"
+          },
+          {
+            "atom1Index": 5,
+            "atom2Index": 6,
+            "elsoPrioritasIndex": 4,
+            "masodikPrioritasIndex": 7,
+            "konfiguracio": "Z"
+          }
+        ],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2R-butan-2-ol",
+      "osszegkeplet": "C4H10O",
+      "izomerCsoportId": "butan-2-ol-R-S",
+      "alapvazId": "butan-2-ol",
+      "csaladok": [
+        "alkohol",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -90,
+          "y": 55
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 90,
+          "y": 55
+        },
+        {
+          "x": 175,
+          "y": 55
+        },
+        {
+          "x": 0,
+          "y": -90
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2R)-bután-2-ol",
+        "alternativak": [
+          {
+            "nev": "(R)-bután-2-ol",
+            "tipus": "iupac"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 1,
+            "prioritasIndexek": [
+              4,
+              2,
+              0
+            ],
+            "konfiguracio": "R",
+            "kiemeltAtomIndex": 4,
+            "elozetIrany": "elo"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    },
+    {
+      "id": "2S-butan-2-ol",
+      "osszegkeplet": "C4H10O",
+      "izomerCsoportId": "butan-2-ol-R-S",
+      "alapvazId": "butan-2-ol",
+      "csaladok": [
+        "alkohol",
+        "nyilt-lancu",
+        "sztereoizomer",
+        "enantiomer"
+      ],
+      "nehezseg": 3,
+      "atomok": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O"
+      ],
+      "kotesek": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "elozetPoziciok": [
+        {
+          "x": -90,
+          "y": 55
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 90,
+          "y": 55
+        },
+        {
+          "x": 175,
+          "y": 55
+        },
+        {
+          "x": 0,
+          "y": -90
+        }
+      ],
+      "nevek": {
+        "preferalt": "(2S)-bután-2-ol",
+        "alternativak": [
+          {
+            "nev": "(S)-bután-2-ol",
+            "tipus": "iupac"
+          }
+        ]
+      },
+      "sztereokemia": {
+        "statusz": "meghatarozott",
+        "kiralisCentrumok": [
+          {
+            "atomIndex": 1,
+            "prioritasIndexek": [
+              4,
+              2,
+              0
+            ],
+            "konfiguracio": "S",
+            "kiemeltAtomIndex": 4,
+            "elozetIrany": "hatra"
+          }
+        ],
+        "kettosKotesek": [],
+        "gyuruKapcsolatok": [],
+        "cukor": null
+      }
+    }
+  ]
+}

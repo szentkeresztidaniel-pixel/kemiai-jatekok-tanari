@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content"
+  >
+
+  <title>Kémiai játékok</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="molekulak.js" defer></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    defer
+  ></script>
+
+  <script src="adatkezelo.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Adatbázis betöltőképernyő -->
+  <div
+    id="betoltes-kepernyo"
+    class="betoltes-kepernyo"
+    role="status"
+    aria-live="polite"
+    aria-busy="false"
+    hidden
+  >
+    <div class="betoltes-kartya">
+      <div
+        class="betoltes-forgo"
+        aria-hidden="true"
+      ></div>
+
+      <h1>
+        Szerves kémiai műhely
+      </h1>
+
+      <p id="betoltes-uzenet">
+        Molekulák betöltése…
+      </p>
+
+      <button
+  id="jatek-tenyleges-inditasa"
+  class="betoltes-start-gomb"
+  type="button"
+  hidden
+>
+  Játék kezdése
+</button>
+    </div>
+  </div>
+
+    <!-- Tanórai csatlakozás -->
+  <div
+    id="tanulo-csatlakozas-kepernyo"
+    class="tanulo-csatlakozas-kepernyo"
+    hidden
+  >
+    <section class="tanulo-csatlakozas-kartya">
+      <div
+        id="tanulo-csatlakozas-urlap-resz"
+      >
+        <h1>Csatlakozás a tanórához</h1>
+
+        <!--
+  A tanórai azonosító szándékosan nem jelenik meg.
+  A QR-kód hivatkozása a háttérben tartalmazza.
+-->
+
+        <form id="tanulo-csatlakozas-urlap">
+          <label for="tanulo-becenev">
+            Add meg a neved vagy beceneved:
+          </label>
+
+          <input
+            id="tanulo-becenev"
+            name="tanulo-becenev"
+            type="text"
+            minlength="1"
+            maxlength="30"
+            autocomplete="nickname"
+            required
+          >
+
+          <button
+            id="tanulo-csatlakozas-gomb"
+            type="submit"
+          >
+            Csatlakozás
+          </button>
+
+          <p
+            id="tanulo-csatlakozas-visszajelzes"
+            class="admin-visszajelzes"
+            aria-live="polite"
+          ></p>
+        </form>
+      </div>
+
+      <div
+        id="tanulo-varakozas"
+        class="tanulo-varakozas"
+        hidden
+      >
+        <div
+          class="betoltes-forgo"
+          aria-hidden="true"
+        ></div>
+
+        <h1>Sikeresen csatlakoztál</h1>
+
+        <p>
+          Bejelentkezve:
+          <strong id="tanulo-bejelentkezett-nev"></strong>
+        </p>
+
+        <p>
+          Várj, amíg a tanár elindítja a játékot!
+        </p>
+
+        <div
+  class="
+    atom-elhelyezes-beallitas
+    tanulo-atom-elhelyezes-beallitas
+  "
+>
+  <div class="atom-elhelyezes-szoveg">
+    <strong>
+      Elhelyezés módja
+    </strong>
+
+    <span
+      id="tanulo-atom-elhelyezes-allapot"
+      aria-live="polite"
+    >
+      Húzásos mód kiválasztva
+    </span>
+  </div>
+
+  <label class="atom-elhelyezes-kapcsolo">
+    <span>Húzás</span>
+
+    <input
+      id="tanulo-kattintasos-atomelhelyezes"
+      type="checkbox"
+      aria-label="Kattintásos elhelyezés bekapcsolása"
+    >
+
+    <span
+      class="kapcsolo-sav"
+      aria-hidden="true"
+    ></span>
+
+    <span>Kattintás</span>
+  </label>
+</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Főmenü nézet -->
+  <main id="fomenu">
+    <h1>Kémiai játékok</h1>
+    <p>Válassz egy játékmódot a kezdéshez!</p>
+
+    <div class="atom-elhelyezes-beallitas">
+    <div class="atom-elhelyezes-szoveg">
+    <strong>Elhelyezés módja</strong>
+    <span id="atom-elhelyezes-allapot" aria-live="polite">Húzásos mód kiválasztva</span>
+  </div>
+
+  <label class="atom-elhelyezes-kapcsolo">
+    <span>Húzás</span>
+
+    <input
+      id="kattintasos-atomelhelyezes"
+      type="checkbox"
+      aria-label="Kattintásos elhelyezés bekapcsolása"
+    >
+
+    <span
+      class="kapcsolo-sav"
+      aria-hidden="true"
+    ></span>
+
+    <span>Kattintás</span>
+  </label>
+</div>
+
+    <section class="tanari-menu-kartya">
+      <h2>Tanári felület</h2>
+
+      <p>
+        Tanóra létrehozása, QR-kódos csatlakozás
+        és a tanulók eredményeinek követése.
+      </p>
+
+      <a
+        class="tanari-menu-gomb"
+        href="?admin=1"
+      >
+        Tanári felület megnyitása
+      </a>
+    </section>
+
+    <section>
+      <h2>Molekulaépítő</h2>
+      <p>Építs stabil molekulákat a rendelkezésre álló atomokból és kötésekből.</p>
+
+<div class="molekula-szurok">
+  <label for="egyeni-nehezseg">Legmagasabb nehézség</label>
+  <select id="egyeni-nehezseg">
+    <option value="1" selected>Könnyű (1. szint)</option>
+  </select>
+
+  <fieldset>
+    <legend>Molekulacsaládok</legend>
+    <div id="egyeni-csaladok">Családok betöltése…</div>
+  </fieldset>
+</div>
+
+<button id="molekula-inditas" type="button">Játék indítása</button>
+    </section>
+
+    <section>
+      <h2>Szintézisverseny</h2>
+      <p>Tervezz reakcióutakat és állítsd elő a célvegyületeket a legkevesebb lépésből.</p>
+      <button id="szintezis-inditas" type="button">Játék indítása</button>
+    </section>
+  </main>
+
+  <!-- Molekulaépítő képernyő -->
+<div id="molekula-kepernyo" class="jatek-kepernyo" hidden>
+
+  <header class="jatek-fejlec">
+    <button id="molekula-vissza" class="vissza-gomb" type="button">
+      ← Főmenü
+    </button>
+
+    <h1>Molekulaépítő műhely</h1>
+
+    <div class="jatek-adatok">
+      <span>Pont: <strong id="molekula-pont">0</strong></span>
+      <span>Idő: <strong id="molekula-ido">15:00</strong></span>
+    </div>
+  </header>
+
+  <div class="molekula-jatek">
+
+    <!-- Bal oldali rendelések -->
+    <aside class="rendeles-panel">
+      <h2>Rendelések</h2>
+
+      <div id="aktiv-rendelesek"></div>
+
+      <div class="kovetkezo-rendeles">
+        <strong>Következő rendelés</strong>
+        <span></span>
+        <small>A részletek később válnak láthatóvá.</small>
+      </div>
+    </aside>
+
+    <!-- Jobb oldali építőfelület -->
+    <section id="epito-feladat-panel" class="epito-panel">
+      <div class="epito-fejlec">
+        <span id="atom-elhelyezes-utmutato">
+  Húzd ide az atomokat, majd kapcsold össze őket!
+</span>
+
+        <button id="epites-torles" type="button">
+          Építés törlése
+        </button>
+      </div>
+
+      <div id="epito-terulet">
+        <svg id="kotes-reteg" aria-hidden="true"></svg>
+
+        <p id="epito-segedszoveg">
+          Az építőfelület jelenleg üres.
+        </p>
+      </div>
+      <div
+        id="ellenorzes-eredmeny"
+        class="ellenorzes-eredmeny"
+        aria-live="polite"
+        hidden
+        ></div>
+
+      <div class="epito-muveletek">
+        <button id="molekula-ellenorzes" type="button">
+          Ellenőrzés
+        </button>
+
+        <button id="rendeles-leadas" type="button">
+          Rendelés leadása
+        </button>
+      </div>
+    </section>
+
+    <!-- Alsó atomtáska -->
+    <section id="atomtaska-panel" class="atomtaska">
+      <h2>Táska</h2>
+
+      <div id="atomraktar">
+  <button class="atom-gomb" data-atom="C" type="button"><strong>C</strong></button>
+  <button class="atom-gomb" data-atom="O" type="button"><strong>O</strong></button>
+  <button class="atom-gomb" data-atom="N" type="button"><strong>N</strong></button>
+  <button class="atom-gomb" data-atom="S" type="button"><strong>S</strong></button>
+  <button class="atom-gomb" data-atom="P" type="button"><strong>P</strong></button>
+  <button class="atom-gomb" data-atom="F" type="button"><strong>F</strong></button>
+  <button class="atom-gomb" data-atom="Cl" type="button"><strong>Cl</strong></button>
+  <button class="atom-gomb" data-atom="Br" type="button"><strong>Br</strong></button>
+  <button class="atom-gomb" data-atom="I" type="button"><strong>I</strong></button>
+  <button class="atom-gomb" data-atom="Si" type="button"><strong>Si</strong></button>
+</div>
+
+      <div class="kotes-eszkozok">
+      <div id="kotesvalaszto">
+        <button class="kotes-gomb" data-kotes="1" type="button">
+          —
+        </button>
+
+        <button class="kotes-gomb" data-kotes="2" type="button">
+          =
+        </button>
+
+        <button class="kotes-gomb" data-kotes="3" type="button">
+          ≡
+        </button>
+        <button
+  class="kotes-gomb"
+  data-kotes="1"
+  data-sztereo="elo"
+  type="button"
+  aria-label="Síkból kifelé mutató tömör ékkötés"
+  title="Tömör ék – a síkból kifelé"
+>
+  ▶
+</button>
+
+<button
+  class="kotes-gomb"
+  data-kotes="1"
+  data-sztereo="hatra"
+  type="button"
+  aria-label="Sík mögé mutató szaggatott ékkötés"
+  title="Szaggatott ék – a sík mögé"
+>
+  ▷
+</button>
+        <button
+  class="kotes-gomb"
+  data-kotes="0"
+  type="button"
+  aria-label="Kötés törlése"
+>
+          ×
+</button>
+      </div>
+      <label class="lanckotes-kapcsolo" for="lanckotes">
+        <input id="lanckotes" type="checkbox">
+        <span>Lánckötés</span>
+      </label>
+      <p id="kotes-visszajelzes" class="kotes-visszajelzes" aria-live="assertive" hidden></p>
+      </div>
+    </section>
+    <!-- Szerkezetről elnevezési felület -->
+<section
+  id="elnevezes-feladat-panel"
+  class="elnevezes-feladat-panel"
+  hidden
+>
+  <div class="elnevezes-feladat-fejlec">
+    <h2>Szerkezetről elnevezés</h2>
+    <p>Nevezd el a képen látható molekulát!</p>
+  </div>
+
+  <div class="elnevezes-feladat-tartalom">
+    <div class="elnevezes-feladat-abra">
+      <svg
+        id="feladat-molekula-svg"
+        viewBox="0 0 360 160"
+        role="img"
+        aria-label="Az elnevezendő molekula szerkezeti ábrája"
+      ></svg>
+    </div>
+
+    <form id="feladat-nev-urlap">
+      <label for="feladat-molekula-nev">
+        A molekula neve:
+      </label>
+
+      <input
+        id="feladat-molekula-nev"
+        name="feladat-molekula-nev"
+        type="text"
+        autocomplete="off"
+      >
+
+      <p
+        id="feladat-nev-visszajelzes"
+        class="nevadas-visszajelzes"
+        aria-live="polite"
+      ></p>
+
+      <div class="elnevezes-feladat-gombok">
+
+        <button
+          id="feladat-nev-ellenorzes"
+          type="submit"
+        >
+          Név ellenőrzése
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  </div>
+</div>
+
+  <!-- Molekula-adminisztráció -->
+  <div
+    id="admin-kepernyo"
+    class="jatek-kepernyo admin-kepernyo"
+    hidden
+  >
+    <header class="jatek-fejlec">
+      <button
+        id="admin-vissza"
+        class="vissza-gomb"
+        type="button"
+      >
+        ← Főmenü
+      </button>
+
+      <h1>Molekulák ellenőrzése</h1>
+
+      <span
+        id="admin-felhasznalo"
+        class="admin-felhasznalo"
+      ></span>
+    </header>
+
+    <!-- Bejelentkezés -->
+    <section
+      id="admin-bejelentkezes"
+      class="admin-panel"
+    >
+      <h2>Adminisztrátori belépés</h2>
+
+      <p>
+        Az inaktív, importált molekulák
+        ellenőrzéséhez jelentkezz be.
+      </p>
+
+      <form id="admin-login-urlap">
+        <label for="admin-email">
+          E-mail-cím
+        </label>
+
+        <input
+          id="admin-email"
+          name="admin-email"
+          type="email"
+          autocomplete="username"
+          required
+        >
+
+        <label for="admin-jelszo">
+          Jelszó
+        </label>
+
+        <input
+          id="admin-jelszo"
+          name="admin-jelszo"
+          type="password"
+          autocomplete="current-password"
+          required
+        >
+
+        <button
+          id="admin-belepes"
+          type="submit"
+        >
+          Bejelentkezés
+        </button>
+
+        <p
+          id="admin-login-visszajelzes"
+          class="admin-visszajelzes"
+          aria-live="polite"
+        ></p>
+      </form>
+    </section>
+
+    <!-- Bejelentkezés utáni tartalom -->
+    <section
+      id="admin-tartalom"
+      class="admin-tartalom"
+      hidden
+    >
+
+          <div class="tanora-vezerlo">
+        <div class="tanora-vezerlo-fejlec">
+          <div>
+            <h2>Tanórai játék</h2>
+
+            <p>
+              Hozz létre egy tanórát, amelyhez
+              a tanulók QR-kóddal csatlakozhatnak.
+            </p>
+          </div>
+
+          <div class="tanora-letrehozas-beallitas">
+            <label for="tanora-idotartam">
+              Játékidő
+            </label>
+
+            <select id="tanora-idotartam">
+              <option value="600">
+                10 perc
+              </option>
+
+              <option
+                value="900"
+                selected
+              >
+                15 perc
+              </option>
+
+              <option value="1200">
+                20 perc
+              </option>
+            </select>
+
+            <button
+              id="tanora-letrehozas"
+              type="button"
+            >
+              Új tanóra létrehozása
+            </button>
+          </div>
+                </div>
+
+        <div class="molekula-szurok">
+          <label for="tanora-nehezseg">Legmagasabb nehézség</label>
+          <select id="tanora-nehezseg">
+            <option value="1" selected>Könnyű (1. szint)</option>
+          </select>
+
+          <fieldset>
+            <legend>Molekulacsaládok</legend>
+            <div id="tanora-csaladok">Családok betöltése…</div>
+          </fieldset>
+        </div>
+
+        <p
+          id="tanora-visszajelzes"
+          class="admin-visszajelzes"
+          aria-live="polite"
+        ></p>
+
+                <div
+          id="tanora-csatlakozas"
+          class="tanora-csatlakozas"
+          hidden
+        >
+          <button
+            id="tanora-qr-nagyitas"
+            class="tanora-qr-gomb"
+            type="button"
+            aria-label="QR-kód megnyitása nagy méretben"
+          >
+            <span
+              id="tanora-qr"
+              class="tanora-qr"
+              aria-hidden="true"
+            ></span>
+
+            <span class="tanora-qr-sugo">
+              Kattints a nagyításhoz
+            </span>
+          </button>
+
+          <!--
+  A tanóra technikai azonosítóját nem mutatjuk.
+  A csatlakozás a QR-kóddal vagy a teljes hivatkozással történik.
+-->
+
+          <div>
+            <span>Csatlakozási cím</span>
+
+            <a
+              id="tanora-link"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            ></a>
+          </div>
+
+          <button
+            id="tanora-link-masolasa"
+            type="button"
+          >
+            Csatlakozási cím másolása
+          </button>
+        </div>
+                <div
+          id="tanora-jatekos-panel"
+          class="tanora-jatekos-panel"
+          hidden
+        >
+          <div class="tanora-jatekos-fejlec">
+            <div>
+              <h3>Csatlakozott tanulók</h3>
+
+              <p>
+                Létszám:
+                <strong id="tanora-jatekos-darab">
+                  0
+                </strong>
+              </p>
+            </div>
+
+            <div class="tanora-jatekos-gombok">
+              <button
+                id="tanora-jatekos-frissites"
+                type="button"
+              >
+                Lista frissítése
+              </button>
+
+              <button
+                id="tanora-inditas"
+                type="button"
+                disabled
+              >
+                Játék indítása
+              </button>
+            </div>
+          </div>
+
+          <div
+            id="tanora-jatekos-lista"
+            class="tanora-jatekos-lista"
+            aria-live="polite"
+          >
+            <p class="tanora-jatekos-ures">
+              Még senki sem csatlakozott.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section
+  id="admin-import-panel"
+  class="admin-panel admin-polimer-panel"
+>
+  <div class="admin-polimer-fejlec">
+    <div>
+      <h2>Molekula importálása</h2>
+      <p>PubChem-vegyület betöltése adminellenőrzésre.</p>
+    </div>
+
+    <button id="admin-import-megnyitas" type="button">
+      Új molekula importálása
+    </button>
+  </div>
+
+  <div id="admin-import-tartalom" hidden>
+
+  <div class="admin-mezo">
+    <label for="admin-import-cid">PubChem CID vagy CID-ek</label>
+<input
+  id="admin-import-cid"
+  type="text"
+  inputmode="text"
+  placeholder="Például: 444266, 444972, 444305"
+>
+  </div>
+
+  <div class="admin-mezo">
+    <label for="admin-import-nev">Magyar keresési név</label>
+    <input
+      id="admin-import-nev"
+      type="text"
+      placeholder="Például: akrilsav"
+    >
+  </div>
+
+  <button id="admin-import-gomb" type="button">
+    Molekula importálása
+  </button>
+
+  <p
+    id="admin-import-visszajelzes"
+    class="admin-visszajelzes"
+    aria-live="polite"
+  ></p>
+  </div>
+</section>
+
+<section id="admin-szintezis-panel" class="admin-panel admin-polimer-panel">
+  <div class="admin-polimer-fejlec">
+    <div>
+      <h2>Kézi szintézis</h2>
+      <p>Reakció összeállítása, majd ellenőrzés és aktiválás.</p>
+    </div>
+
+    <button id="admin-szintezis-megnyitas" type="button">
+      Új reakció létrehozása
+    </button>
+  </div>
+
+  <div id="admin-szintezis-keszito" hidden>
+    <div class="admin-mezo admin-szintezis-kereso">
+      <label for="admin-szintezis-kiindulas-kereso">Kiindulási molekula</label>
+      <input
+        id="admin-szintezis-kiindulas-kereso"
+        class="admin-szintezis-kereso-mezo"
+        type="search"
+        autocomplete="off"
+        placeholder="Molekulák betöltése…"
+        disabled
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="admin-szintezis-kiindulas-talalatok"
+      >
+      <input
+        id="admin-szintezis-kiindulas"
+        class="admin-szintezis-kereso-azonosito"
+        type="hidden"
+      >
+      <div
+        id="admin-szintezis-kiindulas-talalatok"
+        class="admin-szintezis-talalatok"
+        role="listbox"
+        hidden
+      ></div>
+    </div>
+
+    <div id="admin-szintezis-kiindulas-elozet" hidden>
+      <svg
+        id="admin-szintezis-kiindulas-svg"
+        class="nevadas-molekula-elozet admin-molekula-elozet admin-szintezis-elozet-svg"
+        role="img"
+        aria-label="A kiindulási molekula szerkezeti ábrája"
+      ></svg>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-reagensek">Reagensek</label>
+      <textarea
+        id="admin-szintezis-reagensek"
+        rows="2"
+        placeholder="Soronként egy anyag, például: cc H2SO4"
+      ></textarea>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-katalizatorok">Katalizátorok</label>
+      <textarea id="admin-szintezis-katalizatorok" rows="2"></textarea>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-oldoszerek">Oldószerek</label>
+      <textarea id="admin-szintezis-oldoszerek" rows="2"></textarea>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-feltetelek">Játékfeltételek</label>
+      <textarea
+        id="admin-szintezis-feltetelek"
+        rows="2"
+        placeholder="Soronként egy feltétel, például: Δ"
+      ></textarea>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-kilepo">Kilépő anyagok</label>
+      <textarea
+        id="admin-szintezis-kilepo"
+        rows="2"
+        placeholder="Csak a képlet, például: H2O"
+      ></textarea>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-feny">Fényviszony</label>
+      <select id="admin-szintezis-feny">
+        <option value="">Nincs megadva</option>
+        <option value="UV-fény">UV-fény</option>
+        <option value="Látható fény">Látható fény</option>
+        <option value="Sötétben">Sötétben</option>
+      </select>
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-tipus">Reakciótípus</label>
+      <input id="admin-szintezis-tipus" type="text">
+    </div>
+
+    <div class="admin-mezo">
+      <label for="admin-szintezis-korulmenyek">Körülmények</label>
+      <input id="admin-szintezis-korulmenyek" type="text">
+    </div>
+
+    <div class="admin-szintezis-termek-blokk">
+      <div class="admin-polimer-fejlec">
+        <h3>Termékek</h3>
+        <button id="admin-szintezis-termek-hozzaadas" type="button">
+          Termék hozzáadása
+        </button>
+      </div>
+      <div id="admin-szintezis-termekek"></div>
+    </div>
+
+    <button id="admin-szintezis-mentes" type="button">
+      Reakció mentése
+    </button>
+
+    <p
+      id="admin-szintezis-visszajelzes"
+      class="admin-visszajelzes"
+      aria-live="polite"
+    ></p>
+  </div>
+
+  <div class="admin-szintezis-lista-blokk">
+    <div class="admin-polimer-fejlec">
+      <div>
+        <h3>Ellenőrzésre váró reakciók</h3>
+        <p>Inaktív, el nem utasított kézi reakciók.</p>
+      </div>
+      <button id="admin-szintezis-lista-frissites" type="button">
+        Lista frissítése
+      </button>
+    </div>
+
+    <div
+      id="admin-szintezis-lista"
+      class="admin-szintezis-lista"
+      aria-live="polite"
+    ></div>
+
+    <div id="admin-szintezis-lapozas" class="admin-szintezis-lapozas" hidden>
+      <button id="admin-szintezis-elozo-oldal" type="button">
+        Előző oldal
+      </button>
+      <button id="admin-szintezis-kovetkezo-oldal" type="button">
+        Következő oldal
+      </button>
+    </div>
+
+    <p
+      id="admin-szintezis-lista-visszajelzes"
+      class="admin-visszajelzes"
+      aria-live="polite"
+    ></p>
+  </div>
+</section>
+
+      <section
+  id="admin-polimer-panel"
+  class="admin-panel admin-polimer-panel"
+>
+  <div class="admin-polimer-fejlec">
+    <div>
+      <h2>Polimer létrehozása</h2>
+
+      <p>
+        Polimer készítése egy már
+        ellenőrzött, aktív monomerből.
+      </p>
+    </div>
+
+    <button
+      id="admin-polimer-megnyitas"
+      type="button"
+    >
+      Új polimer létrehozása
+    </button>
+  </div>
+
+  <div
+    id="admin-polimer-keszito"
+    hidden
+  >
+    <div class="admin-mezo">
+      <label for="admin-polimer-monomer">
+        Kiindulási monomer
+      </label>
+
+      <select
+        id="admin-polimer-monomer"
+        disabled
+      >
+        <option value="">
+          Monomerek betöltése…
+        </option>
+      </select>
+    </div>
+
+    <div
+  id="admin-polimer-masodik-monomer-mezo"
+  class="admin-mezo"
+  hidden
+>
+  <label for="admin-polimer-masodik-monomer">
+    Második monomer
+  </label>
+
+  <select
+    id="admin-polimer-masodik-monomer"
+    disabled
+  >
+    <option value="">
+      Előbb válassz reakciótípust!
+    </option>
+  </select>
+</div>
+
+<div id="admin-polimer-masodik-monomer-elozet" hidden>
+  <p>Második monomer szerkezete</p>
+  <svg
+    id="admin-polimer-masodik-monomer-svg"
+    class="nevadas-molekula-elozet admin-molekula-elozet"
+    role="img"
+    aria-label="A második monomer szerkezeti ábrája"
+  ></svg>
+</div>
+
+    <div
+  id="admin-polimer-monomer-elozet"
+  hidden
+>
+  <svg
+    id="admin-polimer-monomer-svg"
+    class=
+      "nevadas-molekula-elozet admin-molekula-elozet"
+    role="img"
+    aria-label=
+      "A kiválasztott monomer szerkezeti ábrája"
+  ></svg>
+
+  <div class="admin-mezo">
+  <label for="admin-polimer-reakciomod">
+    Polimerizáció típusa
+  </label>
+
+  <select id="admin-polimer-reakciomod">
+    <option value="egyszeru-alken">
+      Egyszerű alkén-addíció
+    </option>
+
+    <option value="konjugalt-dien-1-4">
+      Konjugált dién – 1,4-addíció
+    </option>
+    <option value="szilandiol-kondenzacio">
+  Szilándiol – kondenzáció
+</option>
+<option
+  value="ketmonomeres-kondenzacio"
+  disabled
+>
+  Két monomer kondenzációja
+  (poliészter / poliamid)
+</option>
+  </select>
+</div>
+
+<div
+  id="admin-polimer-sztereo-mezo"
+  class="admin-mezo"
+  hidden
+>
+  <label for="admin-polimer-sztereo">
+    Megmaradó kettős kötés konfigurációja
+  </label>
+
+  <select id="admin-polimer-sztereo">
+    <option value="">
+      Nincs meghatározva
+    </option>
+
+    <option value="Z">
+      Z-konfiguráció
+    </option>
+
+    <option value="E">
+      E-konfiguráció
+    </option>
+  </select>
+</div>
+
+  <div
+  id="admin-polimer-kotes-mezo"
+  class="admin-mezo"
+>
+  <label for="admin-polimer-kettos-kotes">
+      Polimerizálódó kettős kötés
+    </label>
+
+    <select
+      id="admin-polimer-kettos-kotes"
+      disabled
+    >
+      <option value="">
+        Előbb válassz monomert!
+      </option>
+    </select>
+  </div>
+
+  <p id="admin-polimer-kotes-leiras">
+    A kiválasztott kettős kötés
+    egyszeres kötéssé alakul, és a két
+    szénatom lesz a polimerlánc két
+    kapcsolódási pontja.
+  </p>
+
+  <div
+  id="admin-polimer-eredmeny"
+  hidden
+>
+  <h3>
+    Létrejövő ismétlődő egység
+  </h3>
+
+  <svg
+    id="admin-polimer-elozet-svg"
+    class=
+      "nevadas-molekula-elozet admin-molekula-elozet"
+    role="img"
+    aria-label=
+      "A létrejövő polimer ismétlődő egysége"
+  ></svg>
+
+    <p
+    id="admin-polimer-elozet-visszajelzes"
+    class="admin-visszajelzes"
+    aria-live="polite"
+  ></p>
+
+  <button
+    id="admin-polimer-mentes"
+    type="button"
+    disabled
+  >
+    Polimer mentése
+  </button>
+</div>
+
+</div>
+
+    <p
+      id="admin-polimer-visszajelzes"
+      class="admin-visszajelzes"
+      aria-live="polite"
+    ></p>
+  </div>
+</section>
+
+      <div class="admin-eszkoztar">
+        <strong>
+          Ellenőrzésre vár:
+          <span id="admin-molekula-darab">
+            0
+          </span>
+        </strong>
+
+        <div class="admin-eszkoztar-gombok">
+          <button
+            id="admin-frissites"
+            type="button"
+          >
+            Lista frissítése
+          </button>
+
+          <button
+            id="admin-kijelentkezes"
+            type="button"
+          >
+            Kijelentkezés
+          </button>
+        </div>
+      </div>
+
+      <div class="admin-racs">
+        <aside
+          id="admin-molekula-lista"
+          class="admin-molekula-lista"
+          aria-label=
+            "Ellenőrzésre váró molekulák"
+        ></aside>
+
+        <article class="admin-reszletek">
+          <p
+            id="admin-ures-allapot"
+            class="admin-ures-allapot"
+          >
+            Válassz egy molekulát
+            a listából!
+          </p>
+
+          <div
+            id="admin-molekula-adatok"
+            hidden
+          >
+            <svg
+              id="admin-molekula-svg"
+              class=
+                "nevadas-molekula-elozet admin-molekula-elozet"
+              role="img"
+              aria-label=
+                "Az ellenőrzött molekula szerkezeti ábrája"
+            ></svg>
+
+            <div class="admin-mezo">
+              <label for="admin-preferalt-nev">
+                Preferált magyar név
+              </label>
+
+              <input
+                id="admin-preferalt-nev"
+                type="text"
+              >
+            </div>
+
+            <div class="admin-mezo">
+              <label for="admin-alternativak">
+                Alternatív magyar nevek
+              </label>
+
+              <textarea
+                id="admin-alternativak"
+                rows="3"
+                placeholder=
+                  "Soronként egy alternatív név"
+              ></textarea>
+            </div>
+
+            <div class="admin-mezo">
+              <label for="admin-csaladok">
+                Családok
+              </label>
+
+              <input
+                id="admin-csaladok"
+                type="text"
+                placeholder=
+                  "Vesszővel elválasztva"
+              >
+            </div>
+
+            <div class="admin-mezo">
+              <label for="admin-nehezseg">
+                Nehézség
+              </label>
+
+              <select id="admin-nehezseg">
+                <option value="1">
+                  1 – könnyű
+                </option>
+
+                <option value="2">
+                  2 – közepes
+                </option>
+
+                <option value="3">
+                  3 – nehéz
+                </option>
+              </select>
+            </div>
+
+            <dl class="admin-metaadatok">
+              <div>
+                                <dt>
+                  <label for="admin-osszegkeplet">
+                    Összegképlet
+                  </label>
+                </dt>
+                <dd>
+                  <input
+                    id="admin-osszegkeplet"
+                    type="text"
+                    disabled
+                  >
+                </dd>
+              </div>
+
+              <div>
+                <dt>PubChem CID</dt>
+                <dd id="admin-pubchem-cid">
+                  –
+                </dd>
+              </div>
+
+              <div>
+                <dt>InChIKey</dt>
+                <dd id="admin-inchi-key">
+                  –
+                </dd>
+              </div>
+            </dl>
+
+            <p
+              id="admin-muvelet-visszajelzes"
+              class="admin-visszajelzes"
+              aria-live="polite"
+            ></p>
+
+            <div class="admin-muvelet-gombok">
+              <button
+                id="admin-elutasitas"
+                class="admin-veszely-gomb"
+                type="button"
+              >
+                Elutasítás
+              </button>
+
+              <button
+                id="admin-mentes"
+                type="button"
+              >
+                Javítások mentése
+              </button>
+
+              <button
+                id="admin-aktivalas"
+                class="admin-kiemelt-gomb"
+                type="button"
+              >
+                Mentés és aktiválás
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+
+  <!-- Szintézisverseny képernyő -->
+<div id="szintezis-kepernyo" class="jatek-kepernyo" hidden>
+  <header>
+    <button id="szintezis-vissza" class="vissza-gomb" type="button">
+      ← Főmenü
+    </button>
+    <h1>Szintézisverseny</h1>
+    <div id="szintezis-allas">
+      <p id="szintezis-ido">Hátralévő idő: 15:00</p>
+      <p id="szintezis-pont">Pontszám: 0</p>
+    </div>
+  </header>
+
+  <div class="szintezis-felso-sor">
+    <section
+      id="szintezis-reagens-sav"
+      class="szintezis-kartya-sav"
+      aria-label="Reagensek és katalizátorok"
+      aria-hidden="true"
+    >
+    <h2>Reagensek és katalizátorok</h2>
+      <div
+        id="szintezis-reagens-kartyak"
+        class="szintezis-kartya-lista"
+        data-kartya-tipus="reagens"
+      ></div>
+    </section>
+    <aside id="szintezis-cel-referencia" aria-label="Elérendő célvegyület"></aside>
+  </div>
+
+  <div id="szintezis-munkaterulet"></div>
+
+  <section
+    id="szintezis-korulmeny-sav"
+    class="szintezis-kartya-sav"
+    aria-label="Körülmények"
+    aria-hidden="true"
+  >
+    <h2>Körülmények</h2>
+    <div
+      id="szintezis-korulmeny-kartyak"
+      class="szintezis-kartya-lista"
+      data-kartya-tipus="feltetel"
+    ></div>
+  </section>
+  <p id="szintezis-visszajelzes" role="status"></p>
+</div>
+
+<dialog
+  id="szintezis-cel-nagyitas"
+  class="szintezis-cel-nagyitas"
+  aria-labelledby="szintezis-cel-nagyitas-nev"
+>
+  <div class="szintezis-cel-nagyitas-tartalom">
+    <div
+      id="szintezis-cel-nagyitas-abra"
+      class="szintezis-cel-nagyitas-abra"
+    ></div>
+    <p id="szintezis-cel-nagyitas-nev"></p>
+  </div>
+</dialog>
+
+  <dialog
+  id="nevadas-ablak"
+  class="nevadas-ablak"
+  aria-labelledby="nevadas-ablak-cim"
+>
+    <form id="nevadas-urlap" method="dialog">
+      <h2
+  id="nevadas-ablak-cim"
+  tabindex="-1"
+  autofocus
+>
+  Molekula elnevezése
+</h2>
+
+      <p>
+        A rendelést teljesítetted! A bónuszpontért nevezd el az elkészített molekulát.
+      </p>
+
+      <div
+        class="nevadas-molekula-elozet"
+        aria-label="Az elkészített molekula kicsinyített szerkezete"
+        >
+            <svg
+                id="nevadas-molekula-svg"
+                viewBox="0 0 360 160"
+                role="img"
+                aria-label="Az elkészített molekula szerkezeti ábrája"
+            ></svg>
+        </div>
+
+      <label for="molekula-nev">A molekula neve:</label>
+
+      <input
+        id="molekula-nev"
+        name="molekula-nev"
+        type="text"
+        autocomplete="off"
+      >
+
+      <p
+        id="nevadas-visszajelzes"
+        class="nevadas-visszajelzes"
+        aria-live="polite"
+      ></p>
+
+      <div class="nevadas-gombok">
+        <button id="nevadas-kihagyas" type="button">
+          Kihagyás
+        </button>
+
+        <button id="nevadas-ellenorzes" type="submit">
+          Név ellenőrzése
+        </button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog
+    id="tanora-qr-ablak"
+    class="tanora-qr-ablak"
+  >
+    <div class="tanora-qr-ablak-tartalom">
+      <h2>Csatlakozás a tanórához</h2>
+
+      <div
+        id="tanora-qr-nagy"
+        class="tanora-qr-nagy"
+        aria-label="Nagy méretű tanórai QR-kód"
+      ></div>
+
+      <p>
+  Olvasd be a QR-kódot a telefon kamerájával!
+</p>
+
+      <form method="dialog">
+        <button type="submit">
+          Bezárás
+        </button>
+      </form>
+    </div>
+  </dialog>
+
+<!-- Tanóra indításának oldalon belüli megerősítése -->
+<dialog
+  id="tanora-inditas-megerosites"
+  class="megerosito-ablak"
+  aria-labelledby="tanora-inditas-megerosites-cim"
+>
+  <form
+    method="dialog"
+    class="megerosito-ablak-tartalom"
+  >
+    <div
+      class="megerosito-ikon"
+      aria-hidden="true"
+    >
+      ▶
+    </div>
+
+    <h2 id="tanora-inditas-megerosites-cim">
+      Játék indítása
+    </h2>
+
+    <p>
+      Biztosan elindítod a játékot minden csatlakozott tanulónál?
+    </p>
+
+    <div class="megerosito-gombok">
+      <button
+        id="tanora-inditas-megsem"
+        type="submit"
+        value="megsem"
+        class="megerosito-megsem"
+      >
+        Mégsem
+      </button>
+
+      <button
+        id="tanora-inditas-jovahagyas"
+        type="submit"
+        value="inditas"
+        class="megerosito-inditas"
+      >
+        Játék indítása
+      </button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>
