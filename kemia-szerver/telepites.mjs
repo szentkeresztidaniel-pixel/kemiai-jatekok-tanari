@@ -1,4 +1,4 @@
-import { readFileSync, existsSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { createHash, randomBytes, randomUUID, scrypt } from "node:crypto";
 import { promisify } from "node:util";
@@ -8,7 +8,12 @@ import { DatabaseSync } from "node:sqlite";
 const csomagUtvonal = new URL("./jatek-adatok-v1.json", import.meta.url);
 const adatokMappa = new URL("./adatok/", import.meta.url);
 const dbUtvonal = fileURLToPath(new URL("kemia.sqlite", adatokMappa));
+const tanariBelepesUtvonal = fileURLToPath(
+  new URL("../tanari-belepes.helyi", import.meta.url)
+);
 const scryptAszinkron = promisify(scrypt);
+const automatikusTanar =
+  process.env.KEMIA_TELEPITES_MOD?.trim() === "tanar";
 
 let db;
 let beolvaso;
@@ -181,31 +186,42 @@ try {
     "Az adatbázis már tartalmaz adatokat. A telepítő nem írja felül őket."
   );
 
-  beolvaso = createInterface({
-    input: process.stdin,
-    output: process.stdout
-  });
+  let email;
+  let szerepkor;
 
-  const megszakitas = new AbortController();
-  beolvaso.once("SIGINT", () => megszakitas.abort());
+  if (automatikusTanar) {
+    console.log("Új helyi adatbázis és tanári fiók létrehozása…");
+    email = "tanar@helyi.local";
+    szerepkor = "tanar";
+  } else {
+    beolvaso = createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
 
-  console.log("Új helyi adatbázis és adminisztrátori fiók létrehozása.");
-  console.log("Az e-mail-cím belépési azonosító; a program nem küld levelet.");
+    const megszakitas = new AbortController();
+    beolvaso.once("SIGINT", () => megszakitas.abort());
 
-  const email = (
-    await beolvaso.question("Belépési e-mail-cím: ", {
-      signal: megszakitas.signal
-    })
-  ).trim().toLowerCase();
+    console.log("Új helyi adatbázis és adminisztrátori fiók létrehozása.");
+    console.log("Az e-mail-cím belépési azonosító; a program nem küld levelet.");
 
-  beolvaso.close();
-  beolvaso = undefined;
+    email = (
+      await beolvaso.question("Belépési e-mail-cím: ", {
+        signal: megszakitas.signal
+      })
+    ).trim().toLowerCase();
 
-  ellenoriz(
-    email.length <= 254 &&
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
-    "Érvénytelen e-mail-cím. Futtasd újra a telepítőt."
-  );
+    beolvaso.close();
+    beolvaso = undefined;
+
+    ellenoriz(
+      email.length <= 254 &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
+      "Érvénytelen e-mail-cím. Futtasd újra a telepítőt."
+    );
+
+    szerepkor = "admin";
+  }
 
   const jelszo = randomBytes(24).toString("base64url");
   const so = randomBytes(32);
@@ -364,8 +380,8 @@ try {
   db.prepare(`
     INSERT INTO felhasznalok
       (id,email,jelszo_hash,szerepkor,aktiv,letrehozva)
-    VALUES (?,?,?,'admin',1,?)
-  `).run(randomUUID(), email, jelszoHash, most);
+    VALUES (?,?,?,?,1,?)
+  `).run(randomUUID(), email, jelszoHash, szerepkor, most);
 
   ellenoriz(
     db.prepare("PRAGMA foreign_key_check").all().length === 0,
@@ -375,13 +391,32 @@ try {
   db.exec("COMMIT;");
   tranzakcio = false;
 
+  if (automatikusTanar) {
+    const tartalom = [
+      "# Helyi tanari belepes - ezt a fajlt az indito hozza letre.",
+      "# Egyedi jelszo ehhez a telepiteshez; ne torold.",
+      "EMAIL=" + email,
+      "JELSZO=" + jelszo,
+      ""
+    ].join("\r\n");
+
+    writeFileSync(tanariBelepesUtvonal, tartalom, {
+      encoding: "utf8",
+      flag: "w"
+    });
+  }
+
   console.log("\nA telepítés sikerült.");
   console.log(`Molekulák: ${csomag.molekulak.length}`);
   console.log(`Reakciók: ${csomag.reakciok.length}`);
   console.log(`Reakció–termék kapcsolatok: ${termekDarab}`);
   console.log(`E-mail-cím: ${email}`);
   console.log(`Jelszó: ${jelszo}`);
-  console.log("Mentsd el a jelszót; az adatbázis csak a hashét tárolja.");
+  console.log(
+    automatikusTanar
+      ? "A belépési adatok a tanari-belepes.helyi fájlba kerültek."
+      : "Mentsd el a jelszót; az adatbázis csak a hashét tárolja."
+  );
   console.log("Az adatbázis: adatok/kemia.sqlite. A szerver indítása külön lépés.");
 } catch (hiba) {
   if (tranzakcio) {

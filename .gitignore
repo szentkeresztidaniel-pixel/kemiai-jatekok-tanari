@@ -8,6 +8,7 @@ kemia-szerver/biztonsagi-mentesek/
 .cursor/
 .env
 .env.*
+eszkozok/
 _proba*
 _ui-bridge*
 _inject*

@@ -1,40 +1,31 @@
-﻿# Kémiai játék – tanári útmutató
+# Kémiai játék – tanári útmutató
 
-**Letöltés:** [Tanári csomag ZIP](https://github.com/szentkeresztidaniel-pixel/kemiai-jatekok-tanari/archive/refs/heads/main.zip)
+## Gyors kezdés Windowsban
 
-Csomagold ki a ZIP-et, majd kövesd az alábbi lépéseket.
+1. Csomagold ki a projektet.
+2. Kattints duplán a **`Tanora-inditasa.cmd`** fájlra.
 
----
-## Első beállítás Windowsban
+Az első indítás automatikusan letölti a szükséges **Node.js**-t és **cloudflared**-et (ha kell), létrehozza a helyi adatbázist a csomag játékadataiból, és készít egy **egyedi jelszavú** tanári fiókot. A belépési adatokat az indítóablak írja ki; a böngészőben csak ezeket kell begépelni.
 
-Ezeket csak egyszer kell elvégezni az adott gépen.
+A következő indítások ugyanazt az adatbázist és fiókot használják.
 
-1. Telepítsd a **Node.js**-t a [nodejs.org](https://nodejs.org/) oldalról (LTS változat), majd indítsd újra a gépet, ha a telepítő kéri.
-2. Csomagold ki a projektet egy olyan mappába, ahol később megtalálod (például a Dokumentumokba).
-3. Töltsd le a **cloudflared** Windows-os fájlt (`cloudflared-windows-amd64.exe`), és másold:
-   - ebbe a projektmappába, **vagy**
-   - a Letöltések mappába.
-4. Nyiss **Parancssort** vagy **PowerShellt**, lépj be a projekt **`kemia-szerver`** mappájába, majd futtasd:
+## Tanóra menete
 
-   ```text
-   node telepites.mjs
-   ```
+1. Várd meg, amíg megnyílik a tanári oldal (`http://127.0.0.1:3000/`).
+2. Lépj be a konzolablakban megjelenő e-mail-címmel és jelszóval.
+3. Hozz létre tanórát, és vesd ki a **QR-kódot**.
+4. Várd meg a diákok csatlakozását, majd indítsd el a játékot.
+5. A diákok a QR-kód beolvasásával csatlakoznak (mobilinternettel is működik).
 
-5. Add meg a belépési e-mail-címedet. A telepítő létrehozza a saját helyi adatbázisodat, és kiír egy **jelszót** – ezt mentsd el biztonságos helyre. A program nem küld e-mailt.
+**Az óra végéig hagyd nyitva** az indítóablakot. Az ablak bezárása leállítja a helyi szervert és a Cloudflare Tunnelt.
 
-Ha a telepítés sikerült, a gép készen áll a tanórákra.
+Ha valami hiányzik vagy az indítás elakad, az ablak magyarul kiírja a hibát (például nincs internet a letöltéshez, vagy foglalt a 3000 / 3001-es port).
 
-## Tanóra indítása
+## Fejlesztői / admin telepítés
 
-1. A projektmappában kattints duplán a **`Tanora-inditasa.cmd`** fájlra.
-2. Várd meg, amíg megnyílik a tanári oldal a böngészőben (`http://127.0.0.1:3000/`).
-3. Lépj be az e-mail-címeddel és a telepítéskor kapott jelszóval.
-4. Hozz létre tanórát, és vesd ki a **QR-kódot**.
-5. Várd meg, amíg a diákok csatlakoznak, majd frissítsd a **Játékoslistát**.
-6. Ha mindenki megjelent a listán, indítsd el a játékot.
-7. A diákok a QR-kód beolvasásával csatlakoznak (mobilinternettel is működik).
+Ha admin fiókra van szükséged (nem a tanári csomag egykattintásos módja):
 
-**Az óra végéig hagyd nyitva** a Cloudflare Tunnel ablakot és a helyi szerver ablakot. Ha ezeket bezárod, a diákok elveszítik a kapcsolatot.
-
-Ha a 3000-es vagy 3001-es port foglalt, vagy hiányzik a Node.js / cloudflared, az indító magyarul kiírja, mit kell tenni.
-
+```text
+cd kemia-szerver
+node telepites.mjs
+```
